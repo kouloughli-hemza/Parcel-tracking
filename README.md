@@ -2,7 +2,7 @@
 BioMedic WebApp
 
 
-<p align="center"><a href=https://www.dsonetech.com/Contact.html" target="_blank"><img src="https://www.dsonetech.com/assets/images/dsone-logo128x128-128x128.png" width="400"></a></p>
+<p align="center"><a href=https://www.dsonetech.com/Contact.html" target="_blank"><img src="https://www.dsonetech.com/assets/images/dsone-logo128x128-128x128.png" width="200"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
