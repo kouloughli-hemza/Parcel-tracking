@@ -11,6 +11,12 @@ BioMedic WebApp
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+## Table of contents
+* [About BioMedic Web Application](#about-bioMedic-web-application)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
 ## About BioMedic Web Application
 
 BioMedic Web app is a php app built using Laravel FrameWork , it serves API endpoints to all BioMedic module , such as invoices,Product (Creation, deletion ...etc) , User management, roles management Based on REST 
@@ -26,6 +32,18 @@ For the moment BioMedic REST API is only accessible for  App Licence owners.
 
 
 
+## Technologies
+Project is created with:
+* PHP : 8
+* Laravel FrameWork
+* JWT
+
+## setup
+
+Copy file to your root directory and run
+```
+$ php artisan serve
+```
 
 ## Code of Conduct
 
