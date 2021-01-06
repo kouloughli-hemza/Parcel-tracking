@@ -2,7 +2,7 @@
 
 namespace Vanguard\Announcements\Http\Controllers\Web;
 
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 
 class ReadAnnouncementsController extends Controller
 {

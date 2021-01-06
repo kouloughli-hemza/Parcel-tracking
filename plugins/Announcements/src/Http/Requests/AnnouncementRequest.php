@@ -2,7 +2,7 @@
 
 namespace Vanguard\Announcements\Http\Requests;
 
-use Vanguard\Http\Requests\Request;
+use Dsone\Http\Requests\Request;
 
 class AnnouncementRequest extends Request
 {

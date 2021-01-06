@@ -3,7 +3,7 @@
 namespace Vanguard\Announcements\Http\Controllers\Web;
 
 use Vanguard\Announcements\Repositories\AnnouncementsRepository;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 
 class AnnouncementListController extends Controller
 {

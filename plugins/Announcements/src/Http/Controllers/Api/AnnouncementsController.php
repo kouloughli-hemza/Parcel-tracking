@@ -11,7 +11,7 @@ use Vanguard\Announcements\Events\EmailNotificationRequested;
 use Vanguard\Announcements\Http\Requests\AnnouncementRequest;
 use Vanguard\Announcements\Http\Resources\AnnouncementResource;
 use Vanguard\Announcements\Repositories\AnnouncementsRepository;
-use Vanguard\Http\Controllers\Api\ApiController;
+use Dsone\Http\Controllers\Api\ApiController;
 
 /**
  * Class AnnouncementsController

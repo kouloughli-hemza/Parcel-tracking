@@ -4,8 +4,8 @@ namespace Vanguard\Announcements\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use Vanguard\Permission;
-use Vanguard\Role;
+use Dsone\Permission;
+use Dsone\Role;
 
 class AnnouncementsDatabaseSeeder extends Seeder
 {

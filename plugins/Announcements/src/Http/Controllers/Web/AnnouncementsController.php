@@ -6,7 +6,7 @@ use Vanguard\Announcements\Announcement;
 use Vanguard\Announcements\Events\EmailNotificationRequested;
 use Vanguard\Announcements\Http\Requests\AnnouncementRequest;
 use Vanguard\Announcements\Repositories\AnnouncementsRepository;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 
 /**
  * Class AnnouncementsController
