@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Controllers;
+namespace Dsone\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

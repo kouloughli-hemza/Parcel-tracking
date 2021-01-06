@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Support\Authorization;
+namespace Dsone\Support\Authorization;
 
-use Vanguard\Role;
+use Dsone\Role;
 
 trait AuthorizationUserTrait
 {

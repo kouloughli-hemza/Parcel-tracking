@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Listeners\Login;
+namespace Dsone\Listeners\Login;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Auth\Guard;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Events\User\LoggedIn;
+use Dsone\Repositories\User\UserRepository;
 
 class UpdateLastLoginTimestamp
 {

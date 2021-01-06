@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Http\Middleware;
+namespace Dsone\Http\Middleware;
 
 use Closure;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Repositories\User\UserRepository;
 
 class VerifyTwoFactorPhone
 {

@@ -3,8 +3,8 @@
 namespace Tests\Feature\Api;
 
 use Tests\Feature\ApiTestCase;
-use Vanguard\Country;
-use Vanguard\Http\Resources\CountryResource;
+use Dsone\Country;
+use Dsone\Http\Resources\CountryResource;
 
 class CountriesControllerTest extends ApiTestCase
 {

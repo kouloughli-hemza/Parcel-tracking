@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api;
+namespace Dsone\Http\Controllers\Api;
 
 use Setting;
 
 /**
- * @package Vanguard\Http\Controllers\Api\Settings
+ * @package Dsone\Http\Controllers\Api\Settings
  */
 class SettingsController extends ApiController
 {

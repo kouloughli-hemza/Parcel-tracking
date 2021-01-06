@@ -5,7 +5,7 @@ namespace Tests\Feature\Web;
 use Facades\Tests\Setup\UserFactory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
-use Vanguard\User;
+use Dsone\User;
 
 class ImpersonateUsersTest extends TestCase
 {

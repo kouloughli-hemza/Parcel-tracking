@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Providers;
+namespace Dsone\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Vanguard\User;
+use Dsone\User;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Vanguard\Model' => 'Vanguard\Policies\ModelPolicy',
+        'Dsone\Model' => 'Dsone\Policies\ModelPolicy',
     ];
 
     /**

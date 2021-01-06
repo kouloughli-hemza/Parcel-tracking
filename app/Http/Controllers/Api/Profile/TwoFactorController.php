@@ -1,17 +1,17 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Profile;
+namespace Dsone\Http\Controllers\Api\Profile;
 
 use Authy;
-use Vanguard\Events\User\TwoFactorDisabled;
-use Vanguard\Events\User\TwoFactorEnabled;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\TwoFactor\EnableTwoFactorRequest;
-use Vanguard\Http\Requests\TwoFactor\VerifyTwoFactorTokenRequest;
-use Vanguard\Http\Resources\UserResource;
+use Dsone\Events\User\TwoFactorDisabled;
+use Dsone\Events\User\TwoFactorEnabled;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\TwoFactor\EnableTwoFactorRequest;
+use Dsone\Http\Requests\TwoFactor\VerifyTwoFactorTokenRequest;
+use Dsone\Http\Resources\UserResource;
 
 /**
- * @package Vanguard\Http\Controllers\Api\Profile
+ * @package Dsone\Http\Controllers\Api\Profile
  */
 class TwoFactorController extends ApiController
 {

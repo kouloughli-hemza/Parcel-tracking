@@ -4,8 +4,8 @@ namespace Tests\Unit\Repositories\Country;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
-use Vanguard\Country;
-use Vanguard\Repositories\Country\EloquentCountry;
+use Dsone\Country;
+use Dsone\Repositories\Country\EloquentCountry;
 
 class EloquentCountryTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Services\Auth;
+namespace Dsone\Services\Auth;
 
 use Illuminate\Foundation\Auth\ThrottlesLogins as ThrottlesLoginsBase;
 use Illuminate\Http\RedirectResponse;

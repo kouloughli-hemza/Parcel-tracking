@@ -1,13 +1,13 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api;
+namespace Dsone\Http\Controllers\Api;
 
-use Vanguard\Http\Resources\SessionResource;
-use Vanguard\Repositories\Session\SessionRepository;
+use Dsone\Http\Resources\SessionResource;
+use Dsone\Repositories\Session\SessionRepository;
 
 /**
  * Class SessionsController
- * @package Vanguard\Http\Controllers\Api\Users
+ * @package Dsone\Http\Controllers\Api\Users
  */
 class SessionsController extends ApiController
 {

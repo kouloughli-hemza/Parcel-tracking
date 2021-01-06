@@ -2,9 +2,9 @@
 
 namespace Tests\Setup;
 
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Role;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 use \Facades\Tests\Setup\RoleFactory;
 
 class UserFactory

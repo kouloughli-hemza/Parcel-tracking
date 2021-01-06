@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Auth;
+namespace Dsone\Http\Controllers\Web\Auth;
 
 use Auth;
 use Authy;
@@ -8,13 +8,13 @@ use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\Events\User\LoggedOut;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\Auth\LoginRequest;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Services\Auth\ThrottlesLogins;
-use Vanguard\Services\Auth\TwoFactor\Contracts\Authenticatable;
+use Dsone\Events\User\LoggedIn;
+use Dsone\Events\User\LoggedOut;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\Auth\LoginRequest;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Services\Auth\ThrottlesLogins;
+use Dsone\Services\Auth\TwoFactor\Contracts\Authenticatable;
 
 class LoginController extends Controller
 {

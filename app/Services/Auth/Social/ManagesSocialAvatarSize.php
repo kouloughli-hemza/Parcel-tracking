@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Services\Auth\Social;
+namespace Dsone\Services\Auth\Social;
 
 use Laravel\Socialite\Contracts\User as SocialUser;
 

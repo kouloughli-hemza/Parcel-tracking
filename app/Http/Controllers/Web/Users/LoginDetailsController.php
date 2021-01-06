@@ -1,16 +1,16 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Users;
+namespace Dsone\Http\Controllers\Web\Users;
 
-use Vanguard\Events\User\UpdatedByAdmin;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\User\UpdateLoginDetailsRequest;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\User;
+use Dsone\Events\User\UpdatedByAdmin;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\User\UpdateLoginDetailsRequest;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\User;
 
 /**
  * Class UserDetailsController
- * @package Vanguard\Http\Controllers\Users
+ * @package Dsone\Http\Controllers\Users
  */
 class LoginDetailsController extends Controller
 {

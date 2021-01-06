@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Mail;
+namespace Dsone\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

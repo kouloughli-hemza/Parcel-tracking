@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     |
     | NOTE: This version is overwritten inside app/Providers/AppServiceProvider.php
-    | and it will se application name defined from Vanguard settings page.
+    | and it will se application name defined from Dsone settings page.
     |
     */
 
@@ -20,7 +20,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Vanguard Version
+    | Dsone Version
     |--------------------------------------------------------------------------
     */
     'version' => '6.0.0',
@@ -192,7 +192,7 @@ return [
         Proengsoft\JsValidation\JsValidationServiceProvider::class,
         Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
-        Vanguard\Providers\HtmlServiceProvider::class,
+        Dsone\Providers\HtmlServiceProvider::class,
         Webpatser\Countries\CountriesServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
@@ -200,13 +200,13 @@ return [
         /*
          * Application Service Providers...
          */
-        Vanguard\Providers\AppServiceProvider::class,
-        Vanguard\Providers\AuthServiceProvider::class,
+        Dsone\Providers\AppServiceProvider::class,
+        Dsone\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        Vanguard\Providers\EventServiceProvider::class,
-        Vanguard\Providers\RouteServiceProvider::class,
-        Vanguard\Services\Auth\TwoFactor\AuthyServiceProvider::class,
-        Vanguard\Providers\VanguardServiceProvider::class,
+        Dsone\Providers\EventServiceProvider::class,
+        Dsone\Providers\RouteServiceProvider::class,
+        Dsone\Services\Auth\TwoFactor\AuthyServiceProvider::class,
+        \Dsone\Providers\VanguardServiceProvider::class,
     ],
 
     /*
@@ -265,7 +265,7 @@ return [
         'Countries' => Webpatser\Countries\CountriesFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Setting' => Akaunting\Setting\Facade::class,
-        'Authy' => Vanguard\Services\Auth\TwoFactor\Facade::class,
+        'Authy' => Dsone\Services\Auth\TwoFactor\Facade::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
 
     ],

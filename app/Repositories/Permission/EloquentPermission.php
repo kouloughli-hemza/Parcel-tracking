@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Repositories\Permission;
+namespace Dsone\Repositories\Permission;
 
-use Vanguard\Events\Permission\Created;
-use Vanguard\Events\Permission\Deleted;
-use Vanguard\Events\Permission\Updated;
-use Vanguard\Permission;
+use Dsone\Events\Permission\Created;
+use Dsone\Events\Permission\Deleted;
+use Dsone\Events\Permission\Updated;
+use Dsone\Permission;
 use Cache;
 
 class EloquentPermission implements PermissionRepository

@@ -4,8 +4,8 @@ namespace Tests\Feature\Api\Auth\Password;
 
 use Mail;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Mail\ResetPassword;
-use Vanguard\User;
+use Dsone\Mail\ResetPassword;
+use Dsone\User;
 
 class RemindControllerTest extends ApiTestCase
 {

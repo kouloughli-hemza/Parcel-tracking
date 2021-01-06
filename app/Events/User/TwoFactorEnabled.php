@@ -1,5 +1,5 @@
 <?php
 
-namespace Vanguard\Events\User;
+namespace Dsone\Events\User;
 
 class TwoFactorEnabled {}

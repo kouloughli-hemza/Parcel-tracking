@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Events;
+namespace Dsone\Events;
 
 abstract class Event
 {

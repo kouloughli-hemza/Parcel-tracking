@@ -12,7 +12,7 @@ class PermissionFactory extends Factory
      *
      * @var string
      */
-    protected $model = \Vanguard\Permission::class;
+    protected $model = \Dsone\Permission::class;
 
     /**
      * Define the model's default state.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard;
+namespace Dsone;
 
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -9,14 +9,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Mail;
-use Vanguard\Events\User\RequestedPasswordResetEmail;
-use Vanguard\Presenters\Traits\Presentable;
-use Vanguard\Presenters\UserPresenter;
-use Vanguard\Services\Auth\TwoFactor\Authenticatable as TwoFactorAuthenticatable;
-use Vanguard\Services\Auth\TwoFactor\Contracts\Authenticatable as TwoFactorAuthenticatableContract;
-use Vanguard\Support\Authorization\AuthorizationUserTrait;
-use Vanguard\Support\CanImpersonateUsers;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Events\User\RequestedPasswordResetEmail;
+use Dsone\Presenters\Traits\Presentable;
+use Dsone\Presenters\UserPresenter;
+use Dsone\Services\Auth\TwoFactor\Authenticatable as TwoFactorAuthenticatable;
+use Dsone\Services\Auth\TwoFactor\Contracts\Authenticatable as TwoFactorAuthenticatableContract;
+use Dsone\Support\Authorization\AuthorizationUserTrait;
+use Dsone\Support\CanImpersonateUsers;
+use Dsone\Support\Enum\UserStatus;
 
 class User extends Authenticatable implements TwoFactorAuthenticatableContract, MustVerifyEmail
 {
@@ -109,7 +109,7 @@ class User extends Authenticatable implements TwoFactorAuthenticatableContract, 
      */
     public function sendPasswordResetNotification($token)
     {
-        Mail::to($this)->send(new \Vanguard\Mail\ResetPassword($token));
+        Mail::to($this)->send(new \Dsone\Mail\ResetPassword($token));
 
         event(new RequestedPasswordResetEmail($this));
     }

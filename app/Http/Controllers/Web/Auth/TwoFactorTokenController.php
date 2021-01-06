@@ -1,15 +1,15 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Auth;
+namespace Dsone\Http\Controllers\Web\Auth;
 
 use Auth;
 use Authy;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Services\Auth\ThrottlesLogins;
+use Dsone\Events\User\LoggedIn;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Services\Auth\ThrottlesLogins;
 
 class TwoFactorTokenController extends Controller
 {

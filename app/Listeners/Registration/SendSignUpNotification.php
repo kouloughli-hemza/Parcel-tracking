@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Listeners\Registration;
+namespace Dsone\Listeners\Registration;
 
 use Illuminate\Auth\Events\Registered;
 use Mail;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Repositories\User\UserRepository;
 
 class SendSignUpNotification
 {
@@ -31,7 +31,7 @@ class SendSignUpNotification
         }
 
         foreach ($this->users->getUsersWithRole('Admin') as $user) {
-            Mail::to($user)->send(new \Vanguard\Mail\UserRegistered($event->user));
+            Mail::to($user)->send(new \Dsone\Mail\UserRegistered($event->user));
         }
     }
 }

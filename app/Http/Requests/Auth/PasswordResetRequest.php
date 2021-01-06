@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Http\Requests\Auth;
+namespace Dsone\Http\Requests\Auth;
 
-use Vanguard\Http\Requests\Request;
+use Dsone\Http\Requests\Request;
 
 class PasswordResetRequest extends Request
 {

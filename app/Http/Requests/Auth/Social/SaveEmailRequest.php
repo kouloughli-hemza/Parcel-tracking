@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Http\Requests\Auth\Social;
+namespace Dsone\Http\Requests\Auth\Social;
 
-use Vanguard\Http\Requests\Request;
+use Dsone\Http\Requests\Request;
 
 class SaveEmailRequest extends Request
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Vanguard\Providers;
+namespace Dsone\Providers;
 
 use Route;
-use Vanguard\Permission;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\Session\SessionRepository;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Permission;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\Session\SessionRepository;
+use Dsone\Repositories\User\UserRepository;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -18,13 +18,13 @@ class RouteServiceProvider extends ServiceProvider
      * In addition, it is set as the URL generator's root namespace.
      * @var string
      */
-    protected $webNamespace = 'Vanguard\Http\Controllers\Web';
+    protected $webNamespace = 'Dsone\Http\Controllers\Web';
 
     /**
      * This namespace is applied to the controller routes in your api routes file.
      * @var string
      */
-    protected $apiNamespace = 'Vanguard\Http\Controllers\Api';
+    protected $apiNamespace = 'Dsone\Http\Controllers\Api';
 
     /**
      * Define your route model bindings, pattern filters, etc.

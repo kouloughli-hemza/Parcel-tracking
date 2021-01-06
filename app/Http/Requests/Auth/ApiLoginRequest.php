@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Requests\Auth;
+namespace Dsone\Http\Requests\Auth;
 
 class ApiLoginRequest extends LoginRequest
 {

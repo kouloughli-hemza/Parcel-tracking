@@ -4,7 +4,7 @@ namespace Tests\Feature\Api\Profile;
 
 use Carbon\Carbon;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Http\Resources\UserResource;
+use Dsone\Http\Resources\UserResource;
 
 class DetailsControllerTest extends ApiTestCase
 {

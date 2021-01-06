@@ -1,21 +1,21 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web;
+namespace Dsone\Http\Controllers\Web;
 
-use Vanguard\Events\User\TwoFactorDisabled;
-use Vanguard\Events\User\TwoFactorEnabled;
-use Vanguard\Events\User\TwoFactorEnabledByAdmin;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\TwoFactor\DisableTwoFactorRequest;
-use Vanguard\Http\Requests\TwoFactor\EnableTwoFactorRequest;
-use Vanguard\Http\Requests\TwoFactor\ReSendTwoFactorTokenRequest;
-use Vanguard\Http\Requests\TwoFactor\VerifyTwoFactorTokenRequest;
+use Dsone\Events\User\TwoFactorDisabled;
+use Dsone\Events\User\TwoFactorEnabled;
+use Dsone\Events\User\TwoFactorEnabledByAdmin;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\TwoFactor\DisableTwoFactorRequest;
+use Dsone\Http\Requests\TwoFactor\EnableTwoFactorRequest;
+use Dsone\Http\Requests\TwoFactor\ReSendTwoFactorTokenRequest;
+use Dsone\Http\Requests\TwoFactor\VerifyTwoFactorTokenRequest;
 use Authy;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Repositories\User\UserRepository;
 
 /**
  * Class ProfileController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class TwoFactorController extends Controller
 {

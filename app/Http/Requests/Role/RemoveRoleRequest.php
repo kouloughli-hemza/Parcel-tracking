@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Http\Requests\Role;
+namespace Dsone\Http\Requests\Role;
 
-use Vanguard\Http\Requests\Request;
+use Dsone\Http\Requests\Request;
 
 class RemoveRoleRequest extends Request
 {

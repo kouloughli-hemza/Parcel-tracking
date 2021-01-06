@@ -1,14 +1,14 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Auth;
+namespace Dsone\Http\Controllers\Api\Auth;
 
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Exceptions\InvalidSignatureException;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Auth\ApiVerifyEmailRequest;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Auth\ApiVerifyEmailRequest;
 
 class VerificationController extends ApiController
 {

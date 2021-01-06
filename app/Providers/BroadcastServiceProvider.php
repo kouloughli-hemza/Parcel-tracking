@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Providers;
+namespace Dsone\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;
@@ -19,7 +19,7 @@ class BroadcastServiceProvider extends ServiceProvider
         /*
          * Authenticate the user's personal channel...
          */
-        Broadcast::channel('Vanguard.User.*', function ($user, $userId) {
+        Broadcast::channel('Dsone.User.*', function ($user, $userId) {
             return (int) $user->id === (int) $userId;
         });
     }

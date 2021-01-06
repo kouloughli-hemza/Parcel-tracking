@@ -6,10 +6,10 @@ use Authy;
 use Facades\Tests\Setup\UserFactory;
 use Mockery;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Events\User\TwoFactorDisabledByAdmin;
-use Vanguard\Events\User\TwoFactorEnabledByAdmin;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\User;
+use Dsone\Events\User\TwoFactorDisabledByAdmin;
+use Dsone\Events\User\TwoFactorEnabledByAdmin;
+use Dsone\Http\Resources\UserResource;
+use Dsone\User;
 
 class TwoFactorControllerTest extends ApiTestCase
 {

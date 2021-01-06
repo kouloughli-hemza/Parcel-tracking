@@ -1,18 +1,18 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Users;
+namespace Dsone\Http\Controllers\Web\Users;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
-use Vanguard\Events\User\UpdatedByAdmin;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Services\Upload\UserAvatarManager;
-use Vanguard\User;
+use Dsone\Events\User\UpdatedByAdmin;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Services\Upload\UserAvatarManager;
+use Dsone\User;
 
 /**
  * Class AvatarController
- * @package Vanguard\Http\Controllers\Api\Users
+ * @package Dsone\Http\Controllers\Api\Users
  */
 class AvatarController extends ApiController
 {

@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Role;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         $admin = Role::where('name', 'Admin')->first();
 
         User::create([
-            'first_name' => 'Vanguard',
+            'first_name' => 'Dsone',
             'email' => 'admin@example.com',
             'username' => 'admin',
             'password' => 'admin123',

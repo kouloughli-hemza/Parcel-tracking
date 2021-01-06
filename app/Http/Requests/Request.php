@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Requests;
+namespace Dsone\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -26,7 +26,7 @@ return [
    | Default: false
    */
 
-    'expose_api' => env('EXPOSE_API', false),
+    'expose_api' => env('EXPOSE_API', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Vanguard\User::class,
+            'model' => Dsone\User::class,
         ],
 
         // 'users' => [

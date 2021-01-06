@@ -1,5 +1,5 @@
 <?php
 
-namespace Vanguard\Events\Role;
+namespace Dsone\Events\Role;
 
 class Updated extends RoleEvent {}

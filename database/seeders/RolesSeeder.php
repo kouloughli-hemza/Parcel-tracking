@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Vanguard\Role;
+use Dsone\Role;
 use Illuminate\Database\Seeder;
 
 class RolesSeeder extends Seeder

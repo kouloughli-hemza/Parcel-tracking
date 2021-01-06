@@ -1,17 +1,17 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Profile;
+namespace Dsone\Http\Controllers\Api\Profile;
 
 use Illuminate\Http\Request;
-use Vanguard\Events\User\ChangedAvatar;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\User\UploadAvatarRawRequest;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Services\Upload\UserAvatarManager;
+use Dsone\Events\User\ChangedAvatar;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\User\UploadAvatarRawRequest;
+use Dsone\Http\Resources\UserResource;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Services\Upload\UserAvatarManager;
 
 /**
- * @package Vanguard\Http\Controllers\Api\Profile
+ * @package Dsone\Http\Controllers\Api\Profile
  */
 class AvatarController extends ApiController
 {

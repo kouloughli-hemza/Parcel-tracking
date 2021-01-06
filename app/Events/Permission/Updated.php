@@ -1,5 +1,5 @@
 <?php
 
-namespace Vanguard\Events\Permission;
+namespace Dsone\Events\Permission;
 
 class Updated extends PermissionEvent {}

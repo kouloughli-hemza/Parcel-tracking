@@ -1,16 +1,17 @@
 <?php
 
-namespace Vanguard\Providers;
+namespace Dsone\Providers;
 
 use Vanguard\Plugins\VanguardServiceProvider as BaseVanguardServiceProvider;
-use Vanguard\Support\Plugins\Dashboard\Widgets\BannedUsers;
-use Vanguard\Support\Plugins\Dashboard\Widgets\LatestRegistrations;
-use Vanguard\Support\Plugins\Dashboard\Widgets\NewUsers;
-use Vanguard\Support\Plugins\Dashboard\Widgets\RegistrationHistory;
-use Vanguard\Support\Plugins\Dashboard\Widgets\TotalUsers;
-use Vanguard\Support\Plugins\Dashboard\Widgets\UnconfirmedUsers;
-use Vanguard\Support\Plugins\Dashboard\Widgets\UserActions;
-use \Vanguard\UserActivity\Widgets\ActivityWidget;
+use Dsone\Support\Plugins\Dashboard\Widgets\BannedUsers;
+use Dsone\Support\Plugins\Dashboard\Widgets\LatestRegistrations;
+use Dsone\Support\Plugins\Dashboard\Widgets\NewUsers;
+use Dsone\Support\Plugins\Dashboard\Widgets\RegistrationHistory;
+use Dsone\Support\Plugins\Dashboard\Widgets\TotalUsers;
+use Dsone\Support\Plugins\Dashboard\Widgets\UnconfirmedUsers;
+use Dsone\Support\Plugins\Dashboard\Widgets\UserActions;
+use Vanguard\UserActivity\UserActivity;
+use Vanguard\UserActivity\Widgets\ActivityWidget;
 
 class VanguardServiceProvider extends BaseVanguardServiceProvider
 {
@@ -22,11 +23,11 @@ class VanguardServiceProvider extends BaseVanguardServiceProvider
     protected function plugins()
     {
         return [
-            \Vanguard\Support\Plugins\Dashboard\Dashboard::class,
-            \Vanguard\Support\Plugins\Users::class,
-            \Vanguard\UserActivity\UserActivity::class,
-            \Vanguard\Support\Plugins\RolesAndPermissions::class,
-            \Vanguard\Support\Plugins\Settings::class,
+            \Dsone\Support\Plugins\Dashboard\Dashboard::class,
+            \Dsone\Support\Plugins\Users::class,
+            UserActivity::class,
+            \Dsone\Support\Plugins\RolesAndPermissions::class,
+            \Dsone\Support\Plugins\Settings::class,
             \Vanguard\Announcements\Announcements::class,
         ];
     }
@@ -46,7 +47,7 @@ class VanguardServiceProvider extends BaseVanguardServiceProvider
             UnconfirmedUsers::class,
             RegistrationHistory::class,
             LatestRegistrations::class,
-            ActivityWidget::class,
+            ActivityWidget::class
         ];
     }
 }

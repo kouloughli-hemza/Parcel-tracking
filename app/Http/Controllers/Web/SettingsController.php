@@ -1,17 +1,17 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web;
+namespace Dsone\Http\Controllers\Web;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
-use Vanguard\Events\Settings\Updated as SettingsUpdated;
+use Dsone\Events\Settings\Updated as SettingsUpdated;
 use Illuminate\Http\Request;
 use Setting;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 
 /**
  * Class SettingsController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class SettingsController extends Controller
 {

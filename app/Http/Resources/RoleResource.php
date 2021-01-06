@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Resources;
+namespace Dsone\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use Spatie\QueryBuilder\AllowedInclude;

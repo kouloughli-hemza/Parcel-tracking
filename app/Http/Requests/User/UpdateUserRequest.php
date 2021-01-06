@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Http\Requests\User;
+namespace Dsone\Http\Requests\User;
 
 use Illuminate\Validation\Rule;
-use Vanguard\Http\Requests\Request;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Http\Requests\Request;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class UpdateUserRequest extends Request
 {

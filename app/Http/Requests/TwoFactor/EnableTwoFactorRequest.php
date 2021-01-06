@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Requests\TwoFactor;
+namespace Dsone\Http\Requests\TwoFactor;
 
 class EnableTwoFactorRequest extends TwoFactorRequest
 {

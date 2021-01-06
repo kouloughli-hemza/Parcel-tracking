@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Repositories\Permission;
+namespace Dsone\Repositories\Permission;
 
 interface PermissionRepository
 {

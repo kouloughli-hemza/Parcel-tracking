@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Support\Sidebar;
+namespace Dsone\Support\Sidebar;
 
 use Closure;
 use Illuminate\Support\Collection;
-use Vanguard\User;
+use Dsone\User;
 
 class Item
 {

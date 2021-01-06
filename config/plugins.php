@@ -7,14 +7,14 @@ return [
     | Composer File Template
     |--------------------------------------------------------------------------
     |
-    | The config for composer.json file that will be generated with vanguard::make-plugin command.
+    | The config for composer.json file that will be generated with Dsone::make-plugin command.
     |
     */
     'composer' => [
-        'vendor' => 'vanguardapp',
+        'vendor' => 'dsoneapp',
         'author' => [
-            'name' => 'Milos Stojanovic',
-            'email' => 'stojanovic.loshmi@gmail.com',
+            'name' => 'Kouloughli Hemza',
+            'email' => 'php7@outlook.fr',
         ],
     ],
 

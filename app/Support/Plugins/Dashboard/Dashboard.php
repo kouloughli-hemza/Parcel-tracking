@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Support\Plugins\Dashboard;
+namespace Dsone\Support\Plugins\Dashboard;
 
 use Vanguard\Plugins\Plugin;
-use Vanguard\Support\Sidebar\Item;
+use Dsone\Support\Sidebar\Item;
 
 class Dashboard extends Plugin
 {

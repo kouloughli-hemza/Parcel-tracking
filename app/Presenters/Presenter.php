@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Presenters;
+namespace Dsone\Presenters;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;

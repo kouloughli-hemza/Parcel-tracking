@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Auth\Password;
+namespace Dsone\Http\Controllers\Api\Auth\Password;
 
 use Illuminate\Auth\Events\PasswordReset;
 use Password;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Auth\PasswordResetRequest;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Auth\PasswordResetRequest;
 
 class ResetController extends ApiController
 {

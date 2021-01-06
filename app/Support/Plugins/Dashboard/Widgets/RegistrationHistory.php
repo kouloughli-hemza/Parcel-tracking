@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Support\Plugins\Dashboard\Widgets;
+namespace Dsone\Support\Plugins\Dashboard\Widgets;
 
 use Carbon\Carbon;
 use Vanguard\Plugins\Widget;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Repositories\User\UserRepository;
 
 class RegistrationHistory extends Widget
 {

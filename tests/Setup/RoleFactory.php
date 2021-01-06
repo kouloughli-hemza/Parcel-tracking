@@ -2,8 +2,8 @@
 
 namespace Tests\Setup;
 
-use Vanguard\Permission;
-use Vanguard\Role;
+use Dsone\Permission;
+use Dsone\Role;
 
 class RoleFactory
 {

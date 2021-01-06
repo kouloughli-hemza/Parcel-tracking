@@ -5,9 +5,9 @@ namespace Tests\Feature\Api\Profile;
 use Authy;
 use Mockery;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Events\User\TwoFactorEnabled;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\User;
+use Dsone\Events\User\TwoFactorEnabled;
+use Dsone\Http\Resources\UserResource;
+use Dsone\User;
 
 class TwoFactorControllerTest extends ApiTestCase
 {

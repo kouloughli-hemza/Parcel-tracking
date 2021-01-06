@@ -1,16 +1,16 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Authorization;
+namespace Dsone\Http\Controllers\Web\Authorization;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
-use Vanguard\Events\Role\PermissionsUpdated;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Repositories\Role\RoleRepository;
+use Dsone\Events\Role\PermissionsUpdated;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Repositories\Role\RoleRepository;
 
 /**
  * Class RolePermissionsController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class RolePermissionsController extends Controller
 {

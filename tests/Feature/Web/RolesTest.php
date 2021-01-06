@@ -7,7 +7,7 @@ use Facades\Tests\Setup\RoleFactory;
 use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
-use Vanguard\Role;
+use Dsone\Role;
 
 class RolesTest extends TestCase
 {

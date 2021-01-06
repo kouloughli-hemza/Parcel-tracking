@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Repositories\Country;
+namespace Dsone\Repositories\Country;
 
 interface CountryRepository
 {

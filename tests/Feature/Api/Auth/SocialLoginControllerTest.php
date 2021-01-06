@@ -7,9 +7,9 @@ use Laravel\Socialite\Contracts\User as SocialUserContract;
 use Laravel\Socialite\Two\FacebookProvider;
 use Mockery as m;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class SocialLoginControllerTest extends ApiTestCase
 {

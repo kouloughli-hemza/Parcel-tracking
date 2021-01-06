@@ -7,8 +7,8 @@ use DB;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 use Tests\TestCase;
-use Vanguard\Repositories\Session\DbSession;
-use Vanguard\User;
+use Dsone\Repositories\Session\DbSession;
+use Dsone\User;
 
 class DbSessionTest extends TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Repositories\Country;
+namespace Dsone\Repositories\Country;
 
-use Vanguard\Country;
+use Dsone\Country;
 
 class EloquentCountry implements CountryRepository
 {

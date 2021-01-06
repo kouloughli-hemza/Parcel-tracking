@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Auth;
+namespace Dsone\Http\Controllers\Web\Auth;
 
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Str;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

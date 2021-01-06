@@ -1,13 +1,13 @@
 <?php
 
-namespace Vanguard\Repositories\User;
+namespace Dsone\Repositories\User;
 
-use Vanguard\Http\Filters\UserKeywordSearch;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Role;
-use Vanguard\Services\Auth\Social\ManagesSocialAvatarSize;
-use Vanguard\Services\Upload\UserAvatarManager;
-use Vanguard\User;
+use Dsone\Http\Filters\UserKeywordSearch;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Role;
+use Dsone\Services\Auth\Social\ManagesSocialAvatarSize;
+use Dsone\Services\Upload\UserAvatarManager;
+use Dsone\User;
 use Carbon\Carbon;
 use DB;
 use Illuminate\Database\SQLiteConnection;

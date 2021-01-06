@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Services\Upload;
+namespace Dsone\Services\Upload;
 
 use Illuminate\Filesystem\FilesystemManager;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Str;
-use Vanguard\User;
+use Dsone\User;
 use Illuminate\Filesystem\Filesystem;
 use Intervention\Image\ImageManager;
 

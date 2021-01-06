@@ -5,9 +5,9 @@ namespace Tests\Feature\Api\Authorization;
 use Facades\Tests\Setup\RoleFactory;
 use Facades\Tests\Setup\UserFactory;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Http\Resources\RoleResource;
-use Vanguard\Role;
-use Vanguard\User;
+use Dsone\Http\Resources\RoleResource;
+use Dsone\Role;
+use Dsone\User;
 
 class RolesControllerTest extends ApiTestCase
 {

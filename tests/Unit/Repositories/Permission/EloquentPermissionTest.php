@@ -6,9 +6,9 @@ use Cache;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 use Tests\TestCase;
-use Vanguard\Events\Permission\Created;
-use Vanguard\Permission;
-use Vanguard\Repositories\Permission\EloquentPermission;
+use Dsone\Events\Permission\Created;
+use Dsone\Permission;
+use Dsone\Repositories\Permission\EloquentPermission;
 
 class EloquentPermissionTest extends TestCase
 {
@@ -48,7 +48,7 @@ class EloquentPermissionTest extends TestCase
     /** @test */
     public function update_permission()
     {
-        $this->expectsEvents(\Vanguard\Events\Permission\Updated::class);
+        $this->expectsEvents(\Dsone\Events\Permission\Updated::class);
 
         Cache::put('foo', 'bar');
 
@@ -65,7 +65,7 @@ class EloquentPermissionTest extends TestCase
     /** @test */
     public function delete_permission()
     {
-        $this->expectsEvents(\Vanguard\Events\Permission\Deleted::class);
+        $this->expectsEvents(\Dsone\Events\Permission\Deleted::class);
 
         Cache::put('foo', 'bar');
 

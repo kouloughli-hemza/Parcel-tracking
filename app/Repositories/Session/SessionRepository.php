@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Repositories\Session;
+namespace Dsone\Repositories\Session;
 
 interface SessionRepository
 {

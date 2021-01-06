@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Services\Auth\TwoFactor;
+namespace Dsone\Services\Auth\TwoFactor;
 
 use Illuminate\Support\ServiceProvider;
 

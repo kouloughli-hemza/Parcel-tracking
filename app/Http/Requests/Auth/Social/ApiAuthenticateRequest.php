@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Http\Requests\Auth\Social;
+namespace Dsone\Http\Requests\Auth\Social;
 
 use Illuminate\Validation\Rule;
-use Vanguard\Http\Requests\Request;
+use Dsone\Http\Requests\Request;
 
 class ApiAuthenticateRequest extends Request
 {

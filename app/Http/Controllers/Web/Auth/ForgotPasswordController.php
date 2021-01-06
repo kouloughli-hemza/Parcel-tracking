@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Auth;
+namespace Dsone\Http\Controllers\Web\Auth;
 
 use Illuminate\Http\Request;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller

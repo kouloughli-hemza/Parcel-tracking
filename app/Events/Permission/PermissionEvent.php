@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Events\Permission;
+namespace Dsone\Events\Permission;
 
-use Vanguard\Permission;
+use Dsone\Permission;
 
 abstract class PermissionEvent
 {

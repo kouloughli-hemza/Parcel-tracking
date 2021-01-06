@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web;
+namespace Dsone\Http\Controllers\Web;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {

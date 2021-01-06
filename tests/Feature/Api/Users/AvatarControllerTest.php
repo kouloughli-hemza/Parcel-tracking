@@ -6,8 +6,8 @@ use Facades\Tests\Setup\UserFactory;
 use Illuminate\Http\UploadedFile;
 use Storage;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Events\User\UpdatedByAdmin;
-use Vanguard\User;
+use Dsone\Events\User\UpdatedByAdmin;
+use Dsone\User;
 
 class AvatarControllerTest extends ApiTestCase
 {

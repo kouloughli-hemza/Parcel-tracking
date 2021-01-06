@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Support;
+namespace Dsone\Support;
 
 trait CanImpersonateUsers
 {

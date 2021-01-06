@@ -1,21 +1,21 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Authorization;
+namespace Dsone\Http\Controllers\Web\Authorization;
 
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\Permission\CreatePermissionRequest;
-use Vanguard\Http\Requests\Permission\UpdatePermissionRequest;
-use Vanguard\Permission;
-use Vanguard\Repositories\Permission\PermissionRepository;
-use Vanguard\Repositories\Role\RoleRepository;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\Permission\CreatePermissionRequest;
+use Dsone\Http\Requests\Permission\UpdatePermissionRequest;
+use Dsone\Permission;
+use Dsone\Repositories\Permission\PermissionRepository;
+use Dsone\Repositories\Role\RoleRepository;
 
 /**
  * Class PermissionsController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class PermissionsController extends Controller
 {

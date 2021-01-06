@@ -1,13 +1,13 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web;
+namespace Dsone\Http\Controllers\Web;
 
 use Artisan;
 use DB;
 use Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables;
 use Illuminate\Http\Request;
 use Session;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 
 class InstallController extends Controller
 {
@@ -105,7 +105,7 @@ class InstallController extends Controller
             Artisan::call('db:seed', [
                 '--force' => true,
                 '--quiet' => true,
-                '--class' => '\\Vanguard\\Announcements\\Database\\Seeders\\AnnouncementsDatabaseSeeder'
+                '--class' => '\\Dsone\\Announcements\\Database\\Seeders\\AnnouncementsDatabaseSeeder'
             ]);
 
             return redirect()->route('install.complete');

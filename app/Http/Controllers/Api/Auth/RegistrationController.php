@@ -1,13 +1,13 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Auth;
+namespace Dsone\Http\Controllers\Api\Auth;
 
 use Illuminate\Auth\Events\Registered;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Auth\RegisterRequest;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Auth\RegisterRequest;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
 
 class RegistrationController extends ApiController
 {

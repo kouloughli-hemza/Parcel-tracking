@@ -4,9 +4,9 @@ namespace Tests\Feature\Api\Authorization;
 
 use Facades\Tests\Setup\UserFactory;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Http\Resources\PermissionResource;
-use Vanguard\Permission;
-use Vanguard\User;
+use Dsone\Http\Resources\PermissionResource;
+use Dsone\Permission;
+use Dsone\User;
 
 class PermissionsControllerTest extends ApiTestCase
 {

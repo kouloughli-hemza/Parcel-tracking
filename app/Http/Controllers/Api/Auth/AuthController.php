@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Auth;
+namespace Dsone\Http\Controllers\Api\Auth;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Http\JsonResponse;
@@ -8,15 +8,15 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\Events\User\LoggedOut;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Auth\ApiLoginRequest;
-use Vanguard\User;
+use Dsone\Events\User\LoggedIn;
+use Dsone\Events\User\LoggedOut;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Auth\ApiLoginRequest;
+use Dsone\User;
 
 /**
  * Class LoginController
- * @package Vanguard\Http\Controllers\Api\Auth
+ * @package Dsone\Http\Controllers\Api\Auth
  */
 class AuthController extends ApiController
 {

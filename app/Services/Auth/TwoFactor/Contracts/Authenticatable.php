@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Services\Auth\TwoFactor\Contracts;
+namespace Dsone\Services\Auth\TwoFactor\Contracts;
 
 use Illuminate\Contracts\Auth\Authenticatable as BaseAuthenticatable;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Repositories\Role;
+namespace Dsone\Repositories\Role;
 
-use Vanguard\Role;
+use Dsone\Role;
 
 interface RoleRepository
 {

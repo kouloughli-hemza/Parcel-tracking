@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http;
+namespace Dsone\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -14,12 +14,12 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
-        \Vanguard\Http\Middleware\TrustProxies::class,
+        \Dsone\Http\Middleware\TrustProxies::class,
         \Fruitcake\Cors\HandleCors::class,
-        \Vanguard\Http\Middleware\VerifyInstallation::class,
+        \Dsone\Http\Middleware\VerifyInstallation::class,
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
-        \Vanguard\Http\Middleware\TrimStrings::class,
+        \Dsone\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
     /**
@@ -29,17 +29,17 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \Vanguard\Http\Middleware\EncryptCookies::class,
+            \Dsone\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \Vanguard\Http\Middleware\VerifyCsrfToken::class,
+            \Dsone\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             'banned',
         ],
         'api' => [
-            \Vanguard\Http\Middleware\UseApiGuard::class,
+            \Dsone\Http\Middleware\UseApiGuard::class,
             \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
             'throttle:60,1',
             'bindings',
@@ -53,24 +53,24 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \Vanguard\Http\Middleware\Authenticate::class,
+        'auth' => \Dsone\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \Vanguard\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \Dsone\Http\Middleware\RedirectIfAuthenticated::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'registration' => \Vanguard\Http\Middleware\RegistrationEnabled::class,
-        'social.login' => \Vanguard\Http\Middleware\SocialLogin::class,
-        'role' => \Vanguard\Http\Middleware\CheckRole::class,
-        'permission' => \Vanguard\Http\Middleware\CheckPermissions::class,
-        'session.database' => \Vanguard\Http\Middleware\DatabaseSession::class,
-        'two-factor' => \Vanguard\Http\Middleware\TwoFactorEnabled::class,
-        'verify-2fa-phone' => \Vanguard\Http\Middleware\VerifyTwoFactorPhone::class,
-        'password-reset' => \Vanguard\Http\Middleware\PasswordResetEnabled::class,
-        'banned' => \Vanguard\Http\Middleware\CheckIfBanned::class,
+        'registration' => \Dsone\Http\Middleware\RegistrationEnabled::class,
+        'social.login' => \Dsone\Http\Middleware\SocialLogin::class,
+        'role' => \Dsone\Http\Middleware\CheckRole::class,
+        'permission' => \Dsone\Http\Middleware\CheckPermissions::class,
+        'session.database' => \Dsone\Http\Middleware\DatabaseSession::class,
+        'two-factor' => \Dsone\Http\Middleware\TwoFactorEnabled::class,
+        'verify-2fa-phone' => \Dsone\Http\Middleware\VerifyTwoFactorPhone::class,
+        'password-reset' => \Dsone\Http\Middleware\PasswordResetEnabled::class,
+        'banned' => \Dsone\Http\Middleware\CheckIfBanned::class,
     ];
 
     /**
@@ -83,7 +83,7 @@ class Kernel extends HttpKernel
     protected $middlewarePriority = [
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \Vanguard\Http\Middleware\Authenticate::class,
+        \Dsone\Http\Middleware\Authenticate::class,
         \Illuminate\Session\Middleware\AuthenticateSession::class,
         \Illuminate\Routing\Middleware\SubstituteBindings::class,
         \Illuminate\Auth\Middleware\Authorize::class,

@@ -5,8 +5,8 @@ namespace Tests\Unit\Presenters;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Tests\TestCase;
-use Vanguard\Presenters\UserPresenter;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Presenters\UserPresenter;
+use Dsone\Support\Enum\UserStatus;
 
 class UserPresenterTest extends TestCase
 {
@@ -102,7 +102,7 @@ class UserPresenterTest extends TestCase
 
 class PresentableUser extends Model
 {
-    use \Vanguard\Presenters\Traits\Presentable;
+    use \Dsone\Presenters\Traits\Presentable;
 
     protected $presenter = UserPresenter::class;
 

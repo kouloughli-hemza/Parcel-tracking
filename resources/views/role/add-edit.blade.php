@@ -71,8 +71,8 @@
 
 @section('scripts')
     @if ($edit)
-        {!! JsValidator::formRequest('Vanguard\Http\Requests\Role\UpdateRoleRequest', '#role-form') !!}
+        {!! JsValidator::formRequest('Dsone\Http\Requests\Role\UpdateRoleRequest', '#role-form') !!}
     @else
-        {!! JsValidator::formRequest('Vanguard\Http\Requests\Role\CreateRoleRequest', '#role-form') !!}
+        {!! JsValidator::formRequest('Dsone\Http\Requests\Role\CreateRoleRequest', '#role-form') !!}
     @endif
 @stop

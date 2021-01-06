@@ -1,12 +1,12 @@
 <?php
 
-namespace Vanguard\Services\Auth\Social;
+namespace Dsone\Services\Auth\Social;
 
 use Illuminate\Support\Str;
 use Laravel\Socialite\Contracts\User as SocialUser;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
 
 class SocialManager
 {
@@ -39,7 +39,7 @@ class SocialManager
      *
      * @param SocialUser $socialUser
      * @param string $provider
-     * @return mixed|null|\Vanguard\User
+     * @return mixed|null|\Dsone\User
      */
     public function associate(SocialUser $socialUser, $provider)
     {

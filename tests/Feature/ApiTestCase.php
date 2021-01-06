@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Testing\TestResponse;
 use Tests\TestCase;
 use Tests\UpdatesSettings;
-use Vanguard\User;
+use Dsone\User;
 
 class ApiTestCase extends TestCase
 {

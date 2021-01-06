@@ -6,7 +6,7 @@
 
 <div class="col-md-8 col-lg-6 col-xl-5 mx-auto my-10p" id="login">
     <div class="text-center">
-        <img src="{{ url('assets/img/vanguard-logo.png') }}" alt="{{ setting('app_name') }}" height="50">
+        <img src="{{ url('assets/img/Dsone-logo.png') }}" alt="{{ setting('app_name') }}" height="50">
     </div>
 
     <div class="card mt-5">
@@ -84,5 +84,5 @@
 
 @section('scripts')
     {!! HTML::script('assets/js/as/login.js') !!}
-    {!! JsValidator::formRequest('Vanguard\Http\Requests\Auth\LoginRequest', '#login-form') !!}
+    {!! JsValidator::formRequest('Dsone\Http\Requests\Auth\LoginRequest', '#login-form') !!}
 @stop

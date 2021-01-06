@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Requests\User;
+namespace Dsone\Http\Requests\User;
 
 class UpdateProfileLoginDetailsRequest extends UpdateLoginDetailsRequest
 {

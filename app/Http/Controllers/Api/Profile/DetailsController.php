@@ -1,15 +1,15 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Profile;
+namespace Dsone\Http\Controllers\Api\Profile;
 
-use Vanguard\Events\User\UpdatedProfileDetails;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\User\UpdateProfileDetailsRequest;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Events\User\UpdatedProfileDetails;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\User\UpdateProfileDetailsRequest;
+use Dsone\Http\Resources\UserResource;
+use Dsone\Repositories\User\UserRepository;
 
 /**
- * @package Vanguard\Http\Controllers\Api\Profile
+ * @package Dsone\Http\Controllers\Api\Profile
  */
 class DetailsController extends ApiController
 {

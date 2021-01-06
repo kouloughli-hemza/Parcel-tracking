@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Notification;
 use Mail;
 use Tests\TestCase;
 use Tests\UpdatesSettings;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class RegistrationTest extends TestCase
 {
@@ -108,7 +108,7 @@ class RegistrationTest extends TestCase
 
         $this->post('/register', $this->getRegistrationFormStubData());
 
-        Mail::assertQueued(\Vanguard\Mail\UserRegistered::class, 2);
+        Mail::assertQueued(\Dsone\Mail\UserRegistered::class, 2);
     }
 
     /** @test */

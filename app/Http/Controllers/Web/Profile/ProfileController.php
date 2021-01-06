@@ -1,18 +1,18 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Profile;
+namespace Dsone\Http\Controllers\Web\Profile;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Repositories\Country\CountryRepository;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Repositories\Country\CountryRepository;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
 
 /**
  * Class ProfileController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class ProfileController extends Controller
 {

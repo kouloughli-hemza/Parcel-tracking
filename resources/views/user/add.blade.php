@@ -67,5 +67,5 @@
 
 @section('scripts')
     {!! HTML::script('assets/js/as/profile.js') !!}
-    {!! JsValidator::formRequest('Vanguard\Http\Requests\User\CreateUserRequest', '#user-form') !!}
+    {!! JsValidator::formRequest('Dsone\Http\Requests\User\CreateUserRequest', '#user-form') !!}
 @stop

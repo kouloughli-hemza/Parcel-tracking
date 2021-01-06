@@ -1,14 +1,14 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api;
+namespace Dsone\Http\Controllers\Api;
 
 use Carbon\Carbon;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Http\Resources\UserResource;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
 
 /**
- * @package Vanguard\Http\Controllers\Api
+ * @package Dsone\Http\Controllers\Api
  */
 class StatsController extends ApiController
 {

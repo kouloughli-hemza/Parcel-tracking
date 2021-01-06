@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Support\Plugins;
+namespace Dsone\Support\Plugins;
 
 use Vanguard\Plugins\Plugin;
-use Vanguard\Support\Sidebar\Item;
-use Vanguard\User;
+use Dsone\Support\Sidebar\Item;
+use Dsone\User;
 
 class Settings extends Plugin
 {

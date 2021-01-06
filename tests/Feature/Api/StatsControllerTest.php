@@ -4,11 +4,11 @@ namespace Tests\Feature\Api;
 
 use Carbon\Carbon;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Http\Resources\UserResource;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Role;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class StatsControllerTest extends ApiTestCase
 {

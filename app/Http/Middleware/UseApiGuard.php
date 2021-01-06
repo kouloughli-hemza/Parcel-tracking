@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Middleware;
+namespace Dsone\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Factory;

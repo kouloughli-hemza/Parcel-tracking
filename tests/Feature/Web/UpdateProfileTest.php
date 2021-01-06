@@ -10,11 +10,11 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Storage;
 use Tests\TestCase;
-use Vanguard\Events\User\ChangedAvatar;
-use Vanguard\Events\User\UpdatedProfileDetails;
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\UserActivity\Logger;
+use Dsone\Events\User\ChangedAvatar;
+use Dsone\Events\User\UpdatedProfileDetails;
+use Dsone\Role;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\UserActivity\Logger;
 
 class UpdateProfileTest extends TestCase
 {

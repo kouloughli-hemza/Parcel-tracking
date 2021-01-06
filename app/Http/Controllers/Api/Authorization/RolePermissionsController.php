@@ -1,16 +1,16 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Authorization;
+namespace Dsone\Http\Controllers\Api\Authorization;
 
-use Vanguard\Events\Role\PermissionsUpdated;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Role\UpdateRolePermissionsRequest;
-use Vanguard\Http\Resources\PermissionResource;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Role;
+use Dsone\Events\Role\PermissionsUpdated;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Role\UpdateRolePermissionsRequest;
+use Dsone\Http\Resources\PermissionResource;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Role;
 
 /**
- * @package Vanguard\Http\Controllers\Api
+ * @package Dsone\Http\Controllers\Api
  */
 class RolePermissionsController extends ApiController
 {

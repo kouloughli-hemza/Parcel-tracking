@@ -1,15 +1,15 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Auth;
+namespace Dsone\Http\Controllers\Web\Auth;
 
 use Auth;
 use Authy;
 use Laravel\Socialite\Contracts\User as SocialUser;
 use Socialite;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Services\Auth\Social\SocialManager;
+use Dsone\Events\User\LoggedIn;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Services\Auth\Social\SocialManager;
 
 class SocialAuthController extends Controller
 {

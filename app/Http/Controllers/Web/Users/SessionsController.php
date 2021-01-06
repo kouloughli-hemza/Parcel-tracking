@@ -1,16 +1,16 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Users;
+namespace Dsone\Http\Controllers\Web\Users;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Repositories\Session\SessionRepository;
-use Vanguard\User;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Repositories\Session\SessionRepository;
+use Dsone\User;
 
 /**
  * Class SessionsController
- * @package Vanguard\Http\Controllers\Web\Users
+ * @package Dsone\Http\Controllers\Web\Users
  */
 class SessionsController extends Controller
 {

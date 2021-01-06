@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Vanguard\Country;
+use Dsone\Country;
 
 class CountryFactory extends Factory
 {

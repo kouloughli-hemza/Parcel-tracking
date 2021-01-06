@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Services\Auth\TwoFactor;
+namespace Dsone\Services\Auth\TwoFactor;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {

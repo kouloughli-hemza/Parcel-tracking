@@ -6,7 +6,7 @@ use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Notification;
 use Tests\Feature\ApiTestCase;
-use Vanguard\User;
+use Dsone\User;
 
 class RegistrationControllerTest extends ApiTestCase
 {

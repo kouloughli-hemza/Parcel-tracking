@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Repositories\Session;
+namespace Dsone\Repositories\Session;
 
 use Carbon\Carbon;
 use Jenssegers\Agent\Agent;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Repositories\User\UserRepository;
 use DB;
 
 class DbSession implements SessionRepository

@@ -5,9 +5,9 @@ namespace Tests\Feature\Api\Users;
 use Facades\Tests\Setup\UserFactory;
 use Illuminate\Support\Str;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Http\Resources\SessionResource;
-use Vanguard\Repositories\Session\SessionRepository;
-use Vanguard\User;
+use Dsone\Http\Resources\SessionResource;
+use Dsone\Repositories\Session\SessionRepository;
+use Dsone\User;
 
 class SessionsControllerTest extends ApiTestCase
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard;
+namespace Dsone;
 
 use Database\Factories\RoleFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Vanguard\Support\Authorization\AuthorizationRoleTrait;
+use Dsone\Support\Authorization\AuthorizationRoleTrait;
 
 class Role extends Model
 {

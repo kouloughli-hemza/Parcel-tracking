@@ -1,21 +1,21 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Authorization;
+namespace Dsone\Http\Controllers\Web\Authorization;
 
 use Cache;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\View\View;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\Role\CreateRoleRequest;
-use Vanguard\Http\Requests\Role\UpdateRoleRequest;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Role;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\Role\CreateRoleRequest;
+use Dsone\Http\Requests\Role\UpdateRoleRequest;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Role;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * Class RolesController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class RolesController extends Controller
 {

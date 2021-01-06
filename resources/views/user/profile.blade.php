@@ -116,10 +116,10 @@
 @section('scripts')
     {!! HTML::script('assets/js/as/btn.js') !!}
     {!! HTML::script('assets/js/as/profile.js') !!}
-    {!! JsValidator::formRequest('Vanguard\Http\Requests\User\UpdateDetailsRequest', '#details-form') !!}
-    {!! JsValidator::formRequest('Vanguard\Http\Requests\User\UpdateProfileLoginDetailsRequest', '#login-details-form') !!}
+    {!! JsValidator::formRequest('Dsone\Http\Requests\User\UpdateDetailsRequest', '#details-form') !!}
+    {!! JsValidator::formRequest('Dsone\Http\Requests\User\UpdateProfileLoginDetailsRequest', '#login-details-form') !!}
 
     @if (setting('2fa.enabled'))
-        {!! JsValidator::formRequest('Vanguard\Http\Requests\TwoFactor\EnableTwoFactorRequest', '#two-factor-form') !!}
+        {!! JsValidator::formRequest('Dsone\Http\Requests\TwoFactor\EnableTwoFactorRequest', '#two-factor-form') !!}
     @endif
 @stop

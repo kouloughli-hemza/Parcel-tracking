@@ -1,5 +1,5 @@
 <?php
 
-namespace Vanguard\Events\Settings;
+namespace Dsone\Events\Settings;
 
 class Updated {}

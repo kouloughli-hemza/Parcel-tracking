@@ -8,10 +8,10 @@ use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use Tests\UpdatesSettings;
-use Vanguard\Events\User\TwoFactorEnabled;
-use Vanguard\Events\User\TwoFactorEnabledByAdmin;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\User;
+use Dsone\Events\User\TwoFactorEnabled;
+use Dsone\Events\User\TwoFactorEnabledByAdmin;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\User;
 
 class TwoFactorAuthTest extends TestCase
 {
@@ -368,7 +368,7 @@ class TwoFactorAuthTest extends TestCase
 
         $this->be(UserFactory::user()->create());
 
-        $this->expectsEvents(\Vanguard\Events\User\TwoFactorDisabled::class);
+        $this->expectsEvents(\Dsone\Events\User\TwoFactorDisabled::class);
 
         Authy::shouldReceive('isEnabled')->andReturn(true);
         Authy::shouldReceive('delete')->andReturnNull();
@@ -385,7 +385,7 @@ class TwoFactorAuthTest extends TestCase
     {
         $this->setSettings(['2fa.enabled' => true]);
 
-        $this->expectsEvents(\Vanguard\Events\User\TwoFactorDisabled::class);
+        $this->expectsEvents(\Dsone\Events\User\TwoFactorDisabled::class);
 
         $this->beAdmin();
 

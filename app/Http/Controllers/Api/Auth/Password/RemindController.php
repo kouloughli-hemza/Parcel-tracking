@@ -1,13 +1,13 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Auth\Password;
+namespace Dsone\Http\Controllers\Api\Auth\Password;
 
 use Password;
-use Vanguard\Events\User\RequestedPasswordResetEmail;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Auth\PasswordRemindRequest;
-use Vanguard\Mail\ResetPassword;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Events\User\RequestedPasswordResetEmail;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Auth\PasswordRemindRequest;
+use Dsone\Mail\ResetPassword;
+use Dsone\Repositories\User\UserRepository;
 
 class RemindController extends ApiController
 {

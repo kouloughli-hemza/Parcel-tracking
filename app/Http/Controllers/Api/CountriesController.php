@@ -1,12 +1,12 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api;
+namespace Dsone\Http\Controllers\Api;
 
-use Vanguard\Http\Resources\CountryResource;
-use Vanguard\Repositories\Country\CountryRepository;
+use Dsone\Http\Resources\CountryResource;
+use Dsone\Repositories\Country\CountryRepository;
 
 /**
- * @package Vanguard\Http\Controllers\Api
+ * @package Dsone\Http\Controllers\Api
  */
 class CountriesController extends ApiController
 {

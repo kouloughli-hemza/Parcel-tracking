@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Providers;
+namespace Dsone\Providers;
 
 use Collective\Html\FormBuilder;
 use Collective\Html\HtmlBuilder;

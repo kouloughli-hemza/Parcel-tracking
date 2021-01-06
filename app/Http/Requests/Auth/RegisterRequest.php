@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Http\Requests\Auth;
+namespace Dsone\Http\Requests\Auth;
 
-use Vanguard\Http\Requests\Request;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Http\Requests\Request;
+use Dsone\Support\Enum\UserStatus;
 
 class RegisterRequest extends Request
 {

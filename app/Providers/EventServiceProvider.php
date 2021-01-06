@@ -1,16 +1,16 @@
 <?php
 
-namespace Vanguard\Providers;
+namespace Dsone\Providers;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
-use Vanguard\Events\User\Banned;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\Listeners\Users\ActivateUser;
-use Vanguard\Listeners\Users\InvalidateSessions;
-use Vanguard\Listeners\Login\UpdateLastLoginTimestamp;
-use Vanguard\Listeners\Registration\SendSignUpNotification;
+use Dsone\Events\User\Banned;
+use Dsone\Events\User\LoggedIn;
+use Dsone\Listeners\Users\ActivateUser;
+use Dsone\Listeners\Users\InvalidateSessions;
+use Dsone\Listeners\Login\UpdateLastLoginTimestamp;
+use Dsone\Listeners\Registration\SendSignUpNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

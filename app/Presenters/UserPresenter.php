@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Presenters;
+namespace Dsone\Presenters;
 
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Support\Enum\UserStatus;
 use Illuminate\Support\Str;
 
 class UserPresenter extends Presenter

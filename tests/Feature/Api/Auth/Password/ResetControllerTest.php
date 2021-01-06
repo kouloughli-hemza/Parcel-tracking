@@ -7,7 +7,7 @@ use DB;
 use Hash;
 use Illuminate\Support\Str;
 use Tests\Feature\ApiTestCase;
-use Vanguard\User;
+use Dsone\User;
 
 class ResetControllerTest extends ApiTestCase
 {

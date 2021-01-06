@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Http\Requests\Permission;
+namespace Dsone\Http\Requests\Permission;
 
-use Vanguard\Http\Requests\Request;
+use Dsone\Http\Requests\Request;
 
 class RemovePermissionRequest extends Request
 {

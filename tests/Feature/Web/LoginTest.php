@@ -11,8 +11,8 @@ use Mockery as m;
 use Setting;
 use Tests\TestCase;
 use Tests\UpdatesSettings;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\User;
+use Dsone\Events\User\LoggedIn;
+use Dsone\User;
 
 class LoginTest extends TestCase
 {

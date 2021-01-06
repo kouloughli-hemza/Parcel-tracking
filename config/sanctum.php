@@ -40,7 +40,7 @@ return [
     */
 
     'middleware' => [
-        'verify_csrf_token' => Vanguard\Http\Middleware\VerifyCsrfToken::class,
+        'verify_csrf_token' => Dsone\Http\Middleware\VerifyCsrfToken::class,
     ],
 
 ];

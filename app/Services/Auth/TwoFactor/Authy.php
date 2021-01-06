@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Services\Auth\TwoFactor;
+namespace Dsone\Services\Auth\TwoFactor;
 
 use Exception;
 use GuzzleHttp\Client as HttpClient;
-use Vanguard\Services\Auth\TwoFactor\Contracts\Provider;
-use Vanguard\Services\Auth\TwoFactor\Contracts\Authenticatable as TwoFactorAuthenticatable;
+use Dsone\Services\Auth\TwoFactor\Contracts\Provider;
+use Dsone\Services\Auth\TwoFactor\Contracts\Authenticatable as TwoFactorAuthenticatable;
 
 class Authy implements Provider
 {

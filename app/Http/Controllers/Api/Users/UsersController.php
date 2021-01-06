@@ -1,24 +1,24 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Users;
+namespace Dsone\Http\Controllers\Api\Users;
 
 use Illuminate\Http\Request;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
-use Vanguard\Events\User\Banned;
-use Vanguard\Events\User\Deleted;
-use Vanguard\Events\User\UpdatedByAdmin;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Filters\UserKeywordSearch;
-use Vanguard\Http\Requests\User\CreateUserRequest;
-use Vanguard\Http\Requests\User\UpdateUserRequest;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Events\User\Banned;
+use Dsone\Events\User\Deleted;
+use Dsone\Events\User\UpdatedByAdmin;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Filters\UserKeywordSearch;
+use Dsone\Http\Requests\User\CreateUserRequest;
+use Dsone\Http\Requests\User\UpdateUserRequest;
+use Dsone\Http\Resources\UserResource;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 /**
- * @package Vanguard\Http\Controllers\Api\Users
+ * @package Dsone\Http\Controllers\Api\Users
  */
 class UsersController extends ApiController
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Http\Requests\User;
+namespace Dsone\Http\Requests\User;
 
-use Vanguard\Http\Requests\Request;
-use Vanguard\User;
+use Dsone\Http\Requests\Request;
+use Dsone\User;
 
 class UpdateProfileDetailsRequest extends Request
 {

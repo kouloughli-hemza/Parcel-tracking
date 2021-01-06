@@ -1,19 +1,19 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Authorization;
+namespace Dsone\Http\Controllers\Api\Authorization;
 
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Permission\CreatePermissionRequest;
-use Vanguard\Http\Requests\Permission\RemovePermissionRequest;
-use Vanguard\Http\Requests\Permission\UpdatePermissionRequest;
-use Vanguard\Http\Resources\PermissionResource;
-use Vanguard\Permission;
-use Vanguard\Repositories\Permission\PermissionRepository;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Permission\CreatePermissionRequest;
+use Dsone\Http\Requests\Permission\RemovePermissionRequest;
+use Dsone\Http\Requests\Permission\UpdatePermissionRequest;
+use Dsone\Http\Resources\PermissionResource;
+use Dsone\Permission;
+use Dsone\Repositories\Permission\PermissionRepository;
 
 /**
- * @package Vanguard\Http\Controllers\Api\Users
+ * @package Dsone\Http\Controllers\Api\Users
  */
 class PermissionsController extends ApiController
 {

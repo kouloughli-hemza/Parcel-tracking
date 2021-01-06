@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Services\Auth\TwoFactor\Contracts;
+namespace Dsone\Services\Auth\TwoFactor\Contracts;
 
-use Vanguard\Services\Auth\TwoFactor\Contracts\Authenticatable as TwoFactorAuthenticatable;
+use Dsone\Services\Auth\TwoFactor\Contracts\Authenticatable as TwoFactorAuthenticatable;
 
 interface Provider
 {

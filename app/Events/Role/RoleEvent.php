@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Events\Role;
+namespace Dsone\Events\Role;
 
-use Vanguard\Role;
+use Dsone\Role;
 
 abstract class RoleEvent
 {

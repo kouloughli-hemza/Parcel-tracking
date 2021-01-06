@@ -3,8 +3,8 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Vanguard\Role;
-use Vanguard\User;
+use Dsone\Role;
+use Dsone\User;
 
 class UserFactory extends Factory
 {
@@ -31,12 +31,12 @@ class UserFactory extends Factory
             'avatar' => null,
             'address' => $this->faker->address,
             'country_id' => function () {
-                return $this->faker->randomElement(\Vanguard\Country::pluck('id')->toArray());
+                return $this->faker->randomElement(\Dsone\Country::pluck('id')->toArray());
             },
             'role_id' => function () {
                 return Role::factory()->create()->id;
             },
-            'status' => \Vanguard\Support\Enum\UserStatus::ACTIVE,
+            'status' => \Dsone\Support\Enum\UserStatus::ACTIVE,
             'birthday' => $this->faker->date(),
             'email_verified_at' => (string) now()
         ];

@@ -4,8 +4,8 @@ namespace Tests\Feature\Api\Auth;
 
 use Carbon\Carbon;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class AuthControllerTest extends ApiTestCase
 {

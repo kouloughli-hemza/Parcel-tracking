@@ -7,12 +7,12 @@ use Facades\Tests\Setup\UserFactory;
 use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
-use Vanguard\Events\Permission\Created;
-use Vanguard\Events\Permission\Deleted;
-use Vanguard\Events\Permission\Updated;
-use Vanguard\Events\Role\PermissionsUpdated;
-use Vanguard\Permission;
-use Vanguard\Role;
+use Dsone\Events\Permission\Created;
+use Dsone\Events\Permission\Deleted;
+use Dsone\Events\Permission\Updated;
+use Dsone\Events\Role\PermissionsUpdated;
+use Dsone\Permission;
+use Dsone\Role;
 
 class PermissionsTest extends TestCase
 {

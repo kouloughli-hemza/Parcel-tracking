@@ -6,7 +6,7 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 $request = Illuminate\Http\Request::capture();
 
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-$kernel->pushMiddleware(\Vanguard\Http\Middleware\EncryptCookies::class);
+$kernel->pushMiddleware(\Dsone\Http\Middleware\EncryptCookies::class);
 $kernel->pushMiddleware(\Illuminate\Session\Middleware\StartSession::class);
 $kernel->handle($request);
 

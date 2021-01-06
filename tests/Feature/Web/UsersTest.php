@@ -14,10 +14,10 @@ use Illuminate\Support\Str;
 use Storage;
 use Tests\TestCase;
 use Tests\UpdatesSettings;
-use Vanguard\Events\User\UpdatedByAdmin;
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Events\User\UpdatedByAdmin;
+use Dsone\Role;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class UsersTest extends TestCase
 {

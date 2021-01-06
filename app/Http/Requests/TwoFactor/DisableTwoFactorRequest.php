@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Http\Requests\TwoFactor;
+namespace Dsone\Http\Requests\TwoFactor;
 
-use Vanguard\Http\Requests\Request;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\User;
+use Dsone\Http\Requests\Request;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\User;
 
 class DisableTwoFactorRequest extends TwoFactorRequest
 {

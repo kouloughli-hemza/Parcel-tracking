@@ -5,13 +5,13 @@ namespace Tests\Feature\Api\Users;
 use Facades\Tests\Setup\UserFactory;
 use Illuminate\Support\Arr;
 use Tests\Feature\ApiTestCase;
-use Vanguard\Country;
-use Vanguard\Events\User\Deleted;
-use Vanguard\Events\User\UpdatedByAdmin;
-use Vanguard\Http\Resources\UserResource;
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Country;
+use Dsone\Events\User\Deleted;
+use Dsone\Events\User\UpdatedByAdmin;
+use Dsone\Http\Resources\UserResource;
+use Dsone\Role;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class UsersControllerTest extends ApiTestCase
 {
@@ -87,19 +87,19 @@ class UsersControllerTest extends ApiTestCase
         $user1 = User::factory()->create([
             'first_name' => 'John',
             'last_name' => 'Doe',
-            'email' => 'john.doe@vanguardapp.io'
+            'email' => 'john.doe@Dsoneapp.io'
         ]);
 
         $user2 = User::factory()->create([
             'first_name' => 'Jane',
             'last_name' => 'Doe',
-            'email' => 'jane.doe@vanguardapp.io'
+            'email' => 'jane.doe@Dsoneapp.io'
         ]);
 
         $user3 = User::factory()->create([
             'first_name' => 'Brad',
             'last_name' => 'Pitt',
-            'email' => 'b.pitt@vanguardapp.io'
+            'email' => 'b.pitt@Dsoneapp.io'
         ]);
 
         $response = $this->getJson('/api/users?filter[search]=doe');

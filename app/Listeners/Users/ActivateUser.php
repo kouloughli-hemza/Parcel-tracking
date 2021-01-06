@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Listeners\Users;
+namespace Dsone\Listeners\Users;
 
 use Illuminate\Auth\Events\Verified;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
 
 class ActivateUser
 {

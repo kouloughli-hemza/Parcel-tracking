@@ -1,13 +1,13 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Auth;
+namespace Dsone\Http\Controllers\Web\Auth;
 
 use Illuminate\Auth\Events\Registered;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\Auth\RegisterRequest;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\Auth\RegisterRequest;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
 
 class RegisterController extends Controller
 {

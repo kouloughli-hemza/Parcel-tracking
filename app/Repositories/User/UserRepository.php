@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Repositories\User;
+namespace Dsone\Repositories\User;
 
 use Carbon\Carbon;
-use Vanguard\User;
+use Dsone\User;
 use \Laravel\Socialite\Contracts\User as SocialUser;
 
 interface UserRepository

@@ -1,14 +1,14 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Profile;
+namespace Dsone\Http\Controllers\Web\Profile;
 
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\User\UpdateProfileLoginDetailsRequest;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\User\UpdateProfileLoginDetailsRequest;
+use Dsone\Repositories\User\UserRepository;
 
 /**
  * Class LoginDetailsController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class LoginDetailsController extends Controller
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Vanguard\Mail;
+namespace Dsone\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Vanguard\User;
+use Dsone\User;
 
 class UserRegistered extends Mailable implements ShouldQueue
 {

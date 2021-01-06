@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Presenters\Traits;
+namespace Dsone\Presenters\Traits;
 
 trait Presentable
 {
     /**
-     * @var \Vanguard\Presenters\Presenter
+     * @var \Dsone\Presenters\Presenter
      */
     protected $presenterInstance;
 

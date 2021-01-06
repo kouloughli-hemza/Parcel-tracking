@@ -1,15 +1,15 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Auth;
+namespace Dsone\Http\Controllers\Api\Auth;
 
 use Auth;
 use Exception;
 use Socialite;
-use Vanguard\Events\User\LoggedIn;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Auth\Social\ApiAuthenticateRequest;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Services\Auth\Social\SocialManager;
+use Dsone\Events\User\LoggedIn;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Auth\Social\ApiAuthenticateRequest;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Services\Auth\Social\SocialManager;
 
 class SocialLoginController extends ApiController
 {

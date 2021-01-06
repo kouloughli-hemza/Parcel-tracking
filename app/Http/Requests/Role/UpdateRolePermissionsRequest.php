@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Http\Requests\Role;
+namespace Dsone\Http\Requests\Role;
 
 use Illuminate\Validation\Rule;
-use Vanguard\Http\Requests\Request;
-use Vanguard\Permission;
+use Dsone\Http\Requests\Request;
+use Dsone\Permission;
 
 class UpdateRolePermissionsRequest extends Request
 {

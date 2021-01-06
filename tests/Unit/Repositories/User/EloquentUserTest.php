@@ -9,10 +9,10 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 use Illuminate\Testing\Assert;
 use Tests\TestCase;
-use Vanguard\Repositories\User\EloquentUser;
-use Vanguard\Role;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Repositories\User\EloquentUser;
+use Dsone\Role;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 class EloquentUserTest extends TestCase
 {

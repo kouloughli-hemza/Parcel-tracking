@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api;
+namespace Dsone\Http\Controllers\Api;
 
 use Illuminate\Http\Response;
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 
 abstract class ApiController extends Controller
 {

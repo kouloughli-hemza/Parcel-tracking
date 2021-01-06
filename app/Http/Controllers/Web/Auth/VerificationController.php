@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Auth;
+namespace Dsone\Http\Controllers\Web\Auth;
 
-use Vanguard\Http\Controllers\Controller;
+use Dsone\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\VerifiesEmails;
 
 class VerificationController extends Controller

@@ -1,19 +1,19 @@
 <?php
 
-namespace Vanguard\Providers;
+namespace Dsone\Providers;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Vanguard\Repositories\Country\CountryRepository;
-use Vanguard\Repositories\Country\EloquentCountry;
-use Vanguard\Repositories\Permission\EloquentPermission;
-use Vanguard\Repositories\Permission\PermissionRepository;
-use Vanguard\Repositories\Role\EloquentRole;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\Session\DbSession;
-use Vanguard\Repositories\Session\SessionRepository;
-use Vanguard\Repositories\User\EloquentUser;
-use Vanguard\Repositories\User\UserRepository;
+use Dsone\Repositories\Country\CountryRepository;
+use Dsone\Repositories\Country\EloquentCountry;
+use Dsone\Repositories\Permission\EloquentPermission;
+use Dsone\Repositories\Permission\PermissionRepository;
+use Dsone\Repositories\Role\EloquentRole;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\Session\DbSession;
+use Dsone\Repositories\Session\SessionRepository;
+use Dsone\Repositories\User\EloquentUser;
+use Dsone\Repositories\User\UserRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

@@ -1,20 +1,20 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Api\Authorization;
+namespace Dsone\Http\Controllers\Api\Authorization;
 
 use Cache;
 use Spatie\QueryBuilder\QueryBuilder;
-use Vanguard\Http\Controllers\Api\ApiController;
-use Vanguard\Http\Requests\Role\CreateRoleRequest;
-use Vanguard\Http\Requests\Role\RemoveRoleRequest;
-use Vanguard\Http\Requests\Role\UpdateRoleRequest;
-use Vanguard\Http\Resources\RoleResource;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Role;
+use Dsone\Http\Controllers\Api\ApiController;
+use Dsone\Http\Requests\Role\CreateRoleRequest;
+use Dsone\Http\Requests\Role\RemoveRoleRequest;
+use Dsone\Http\Requests\Role\UpdateRoleRequest;
+use Dsone\Http\Resources\RoleResource;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Role;
 
 /**
- * @package Vanguard\Http\Controllers\Api\Users
+ * @package Dsone\Http\Controllers\Api\Users
  */
 class RolesController extends ApiController
 {

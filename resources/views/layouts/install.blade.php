@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-3 logo-wrapper">
-                <img src="{{ url('assets/img/vanguard-logo.png') }}" alt="Vanguard" class="logo">
+                <img src="{{ url('assets/img/Dsone-logo.png') }}" alt="Dsone" class="logo">
             </div>
         </div>
         <div class="wizard col-md-6 offset-3">

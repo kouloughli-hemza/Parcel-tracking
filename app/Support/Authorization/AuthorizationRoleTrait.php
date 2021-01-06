@@ -1,10 +1,10 @@
 <?php
 
-namespace Vanguard\Support\Authorization;
+namespace Dsone\Support\Authorization;
 
 use Cache;
 use Config;
-use Vanguard\Permission;
+use Dsone\Permission;
 
 trait AuthorizationRoleTrait
 {

@@ -10,8 +10,8 @@ use Socialite;
 use Facades\Tests\Setup\UserFactory;
 use Tests\TestCase;
 use Tests\UpdatesSettings;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 use Laravel\Socialite\Contracts\User as SocialUserContract;
 use Mockery as m;
 

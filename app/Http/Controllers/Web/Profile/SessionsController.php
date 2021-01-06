@@ -1,13 +1,13 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Profile;
+namespace Dsone\Http\Controllers\Web\Profile;
 
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Repositories\Session\SessionRepository;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Repositories\Session\SessionRepository;
 
 /**
  * Class SessionsController
- * @package Vanguard\Http\Controllers\Web\Profile
+ * @package Dsone\Http\Controllers\Web\Profile
  */
 class SessionsController extends Controller
 {

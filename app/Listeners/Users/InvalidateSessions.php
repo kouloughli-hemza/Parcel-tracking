@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Listeners\Users;
+namespace Dsone\Listeners\Users;
 
-use Vanguard\Events\User\Banned;
-use Vanguard\Repositories\Session\SessionRepository;
+use Dsone\Events\User\Banned;
+use Dsone\Repositories\Session\SessionRepository;
 
 class InvalidateSessions
 {

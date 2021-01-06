@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Http\Requests\User;
+namespace Dsone\Http\Requests\User;
 
-use Vanguard\Http\Requests\Request;
+use Dsone\Http\Requests\Request;
 
 class UploadAvatarRawRequest extends Request
 {

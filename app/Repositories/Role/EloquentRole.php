@@ -1,11 +1,11 @@
 <?php
 
-namespace Vanguard\Repositories\Role;
+namespace Dsone\Repositories\Role;
 
-use Vanguard\Events\Role\Created;
-use Vanguard\Events\Role\Deleted;
-use Vanguard\Events\Role\Updated;
-use Vanguard\Role;
+use Dsone\Events\Role\Created;
+use Dsone\Events\Role\Deleted;
+use Dsone\Events\Role\Updated;
+use Dsone\Role;
 
 class EloquentRole implements RoleRepository
 {

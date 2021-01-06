@@ -12,7 +12,7 @@ class RoleFactory extends Factory
      *
      * @var string
      */
-    protected $model = \Vanguard\Role::class;
+    protected $model = \Dsone\Role::class;
 
     /**
      * Define the model's default state.

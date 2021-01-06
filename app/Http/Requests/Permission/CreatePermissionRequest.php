@@ -1,9 +1,9 @@
 <?php
 
-namespace Vanguard\Http\Requests\Permission;
+namespace Dsone\Http\Requests\Permission;
 
 use Illuminate\Validation\Rule;
-use Vanguard\Rules\ValidPermissionName;
+use Dsone\Rules\ValidPermissionName;
 
 class CreatePermissionRequest extends BasePermissionRequest
 {

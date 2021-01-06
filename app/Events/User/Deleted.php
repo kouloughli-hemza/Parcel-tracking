@@ -1,8 +1,8 @@
 <?php
 
-namespace Vanguard\Events\User;
+namespace Dsone\Events\User;
 
-use Vanguard\User;
+use Dsone\User;
 
 class Deleted
 {

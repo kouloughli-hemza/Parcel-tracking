@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Rules;
+namespace Dsone\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 

@@ -1,23 +1,23 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Users;
+namespace Dsone\Http\Controllers\Web\Users;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use Vanguard\Events\User\Deleted;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Http\Requests\User\CreateUserRequest;
-use Vanguard\Repositories\Activity\ActivityRepository;
-use Vanguard\Repositories\Country\CountryRepository;
-use Vanguard\Repositories\Role\RoleRepository;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Support\Enum\UserStatus;
-use Vanguard\User;
+use Dsone\Events\User\Deleted;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\User\CreateUserRequest;
+use Dsone\Repositories\Activity\ActivityRepository;
+use Dsone\Repositories\Country\CountryRepository;
+use Dsone\Repositories\Role\RoleRepository;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Support\Enum\UserStatus;
+use Dsone\User;
 
 /**
  * Class UsersController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class UsersController extends Controller
 {

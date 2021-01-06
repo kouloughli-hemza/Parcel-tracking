@@ -1,16 +1,16 @@
 <?php
 
-namespace Vanguard\Http\Controllers\Web\Profile;
+namespace Dsone\Http\Controllers\Web\Profile;
 
 use Illuminate\Http\Request;
-use Vanguard\Events\User\ChangedAvatar;
-use Vanguard\Http\Controllers\Controller;
-use Vanguard\Repositories\User\UserRepository;
-use Vanguard\Services\Upload\UserAvatarManager;
+use Dsone\Events\User\ChangedAvatar;
+use Dsone\Http\Controllers\Controller;
+use Dsone\Repositories\User\UserRepository;
+use Dsone\Services\Upload\UserAvatarManager;
 
 /**
  * Class ProfileController
- * @package Vanguard\Http\Controllers
+ * @package Dsone\Http\Controllers
  */
 class AvatarController extends Controller
 {

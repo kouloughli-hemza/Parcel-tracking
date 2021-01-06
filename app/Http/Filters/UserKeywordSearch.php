@@ -1,6 +1,6 @@
 <?php
 
-namespace Vanguard\Http\Filters;
+namespace Dsone\Http\Filters;
 
 use Illuminate\Database\Eloquent\Builder;
 use Spatie\QueryBuilder\Filters\Filter;

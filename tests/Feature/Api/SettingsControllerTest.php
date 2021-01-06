@@ -5,7 +5,7 @@ namespace Tests\Feature\Api;
 use Facades\Tests\Setup\UserFactory;
 use Setting;
 use Tests\Feature\ApiTestCase;
-use Vanguard\User;
+use Dsone\User;
 
 class SettingsControllerTest extends ApiTestCase
 {

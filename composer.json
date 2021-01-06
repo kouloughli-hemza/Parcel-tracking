@@ -1,5 +1,5 @@
 {
-    "name": "loshmis/vanguard",
+    "name": "loshmis/biomedic",
     "description": "Advanced PHP Login and User Management",
     "keywords": [
         "advanced",
@@ -23,6 +23,14 @@
         {
             "type": "vcs",
             "url": "https://github.com/loshmis/laravel-countries"
+        },
+        {
+            "type": "path",
+            "url": "./plugins/ActivityLog"
+        },
+        {
+            "type": "path",
+            "url": "./plugins/Announcements"
         }
     ],
     "require": {
@@ -43,8 +51,8 @@
         "laravelcollective/html": "^6.2",
         "proengsoft/laravel-jsvalidation": "^4.0.0",
         "spatie/laravel-query-builder": "^3.0",
-        "vanguardapp/announcements": "^3.0",
-        "vanguardapp/activity-log": "^3.0",
+        "vanguardapp/announcements": "*",
+        "vanguardapp/activity-log": "*",
         "vanguardapp/plugins": "^3.0.0",
         "webpatser/laravel-countries": "dev-master"
     },
@@ -59,7 +67,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Vanguard\\": "app/",
+            "Dsone\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

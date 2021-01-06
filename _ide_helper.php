@@ -1515,7 +1515,7 @@ namespace Illuminate\Support\Facades {
         public static function handle($input, $output = null)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         return $instance->handle($input, $output);
         }
         
@@ -1530,7 +1530,7 @@ namespace Illuminate\Support\Facades {
         public static function terminate($input, $status)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         $instance->terminate($input, $status);
         }
         
@@ -1545,7 +1545,7 @@ namespace Illuminate\Support\Facades {
         public static function command($signature, $callback)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         return $instance->command($signature, $callback);
         }
         
@@ -1559,7 +1559,7 @@ namespace Illuminate\Support\Facades {
         public static function registerCommand($command)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         $instance->registerCommand($command);
         }
         
@@ -1576,7 +1576,7 @@ namespace Illuminate\Support\Facades {
         public static function call($command, $parameters = [], $outputBuffer = null)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         return $instance->call($command, $parameters, $outputBuffer);
         }
         
@@ -1591,7 +1591,7 @@ namespace Illuminate\Support\Facades {
         public static function queue($command, $parameters = [])
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         return $instance->queue($command, $parameters);
         }
         
@@ -1604,7 +1604,7 @@ namespace Illuminate\Support\Facades {
         public static function all()
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         return $instance->all();
         }
         
@@ -1617,7 +1617,7 @@ namespace Illuminate\Support\Facades {
         public static function output()
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         return $instance->output();
         }
         
@@ -1630,7 +1630,7 @@ namespace Illuminate\Support\Facades {
         public static function bootstrap()
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         $instance->bootstrap();
         }
         
@@ -1644,7 +1644,7 @@ namespace Illuminate\Support\Facades {
         public static function setArtisan($artisan)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-                        /** @var \Vanguard\Console\Kernel $instance */
+                        /** @var \Dsone\Console\Kernel $instance */
                         $instance->setArtisan($artisan);
         }
          
@@ -1874,7 +1874,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the currently authenticated user.
          *
-         * @return \Vanguard\User|null 
+         * @return \Dsone\User|null
          * @static 
          */ 
         public static function user()
@@ -1915,7 +1915,7 @@ namespace Illuminate\Support\Facades {
          * Log the given user ID into the application without sessions or cookies.
          *
          * @param mixed $id
-         * @return \Vanguard\User|false 
+         * @return \Dsone\User|false
          * @static 
          */ 
         public static function onceUsingId($id)
@@ -1989,7 +1989,7 @@ namespace Illuminate\Support\Facades {
          *
          * @param mixed $id
          * @param bool $remember
-         * @return \Vanguard\User|false 
+         * @return \Dsone\User|false
          * @static 
          */ 
         public static function loginUsingId($id, $remember = false)
@@ -2074,7 +2074,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the last user we attempted to authenticate.
          *
-         * @return \Vanguard\User 
+         * @return \Dsone\User
          * @static 
          */ 
         public static function getLastAttempted()
@@ -2194,7 +2194,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Return the currently cached user.
          *
-         * @return \Vanguard\User|null 
+         * @return \Dsone\User|null
          * @static 
          */ 
         public static function getUser()
@@ -2248,7 +2248,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Determine if current user is authenticated. If not, throw an exception.
          *
-         * @return \Vanguard\User 
+         * @return \Dsone\User
          * @throws \Illuminate\Auth\AuthenticationException
          * @static 
          */ 
@@ -19712,7 +19712,7 @@ namespace Akaunting\Setting {
  
 }
 
-namespace Vanguard\Services\Auth\TwoFactor { 
+namespace Dsone\Services\Auth\TwoFactor {
 
     /**
      * 
@@ -19723,65 +19723,65 @@ namespace Vanguard\Services\Auth\TwoFactor {
         /**
          * Determine if the given user has two-factor authentication enabled.
          *
-         * @param \Vanguard\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
+         * @param \Dsone\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
          * @return bool 
          * @static 
          */ 
         public static function isEnabled($user)
         {
-                        /** @var \Vanguard\Services\Auth\TwoFactor\Authy $instance */
+                        /** @var \Dsone\Services\Auth\TwoFactor\Authy $instance */
                         return $instance->isEnabled($user);
         }
         
         /**
          * Register the given user with the provider.
          *
-         * @param \Vanguard\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
+         * @param \Dsone\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
          * @static 
          */ 
         public static function register($user)
         {
-                        /** @var \Vanguard\Services\Auth\TwoFactor\Authy $instance */
+                        /** @var \Dsone\Services\Auth\TwoFactor\Authy $instance */
                         return $instance->register($user);
         }
         
         /**
          * Sends an SMS with a phone verification token.
          *
-         * @param \Vanguard\Services\Auth\TwoFactor\Contracts\Authenticatable $user
+         * @param \Dsone\Services\Auth\TwoFactor\Contracts\Authenticatable $user
          * @return mixed 
          * @static 
          */ 
         public static function sendTwoFactorVerificationToken($user)
         {
-                        /** @var \Vanguard\Services\Auth\TwoFactor\Authy $instance */
+                        /** @var \Dsone\Services\Auth\TwoFactor\Authy $instance */
                         return $instance->sendTwoFactorVerificationToken($user);
         }
         
         /**
          * Determine if the given token is valid for the given user.
          *
-         * @param \Vanguard\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
+         * @param \Dsone\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
          * @param string $token
          * @return bool 
          * @static 
          */ 
         public static function tokenIsValid($user, $token)
         {
-                        /** @var \Vanguard\Services\Auth\TwoFactor\Authy $instance */
+                        /** @var \Dsone\Services\Auth\TwoFactor\Authy $instance */
                         return $instance->tokenIsValid($user, $token);
         }
         
         /**
          * Delete the given user from the provider.
          *
-         * @param \Vanguard\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
+         * @param \Dsone\Services\Auth\TwoFactor\TwoFactorAuthenticatable $user
          * @return bool 
          * @static 
          */ 
         public static function delete($user)
         {
-                        /** @var \Vanguard\Services\Auth\TwoFactor\Authy $instance */
+                        /** @var \Dsone\Services\Auth\TwoFactor\Authy $instance */
                         return $instance->delete($user);
         }
          
@@ -19807,7 +19807,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function attempt($credentials)
         {
             //Method inherited from \Tymon\JWTAuth\JWTAuth            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->attempt($credentials);
         }
         
@@ -19820,7 +19820,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function authenticate()
         {
             //Method inherited from \Tymon\JWTAuth\JWTAuth            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->authenticate();
         }
         
@@ -19833,7 +19833,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function toUser()
         {
             //Method inherited from \Tymon\JWTAuth\JWTAuth            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->toUser();
         }
         
@@ -19846,7 +19846,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function user()
         {
             //Method inherited from \Tymon\JWTAuth\JWTAuth            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->user();
         }
         
@@ -19860,7 +19860,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function fromSubject($subject)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->fromSubject($subject);
         }
         
@@ -19874,7 +19874,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function fromUser($user)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->fromUser($user);
         }
         
@@ -19889,7 +19889,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function refresh($forceForever = false, $resetClaims = false)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->refresh($forceForever, $resetClaims);
         }
         
@@ -19897,12 +19897,12 @@ namespace Tymon\JWTAuth\Facades {
          * Invalidate a token (add it to the blacklist).
          *
          * @param bool $forceForever
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function invalidate($forceForever = true)
         {
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->invalidate($forceForever);
         }
         
@@ -19917,7 +19917,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function checkOrFail()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->checkOrFail();
         }
         
@@ -19931,7 +19931,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function check($getPayload = false)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->check($getPayload);
         }
         
@@ -19944,7 +19944,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function getToken()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->getToken();
         }
         
@@ -19952,13 +19952,13 @@ namespace Tymon\JWTAuth\Facades {
          * Parse the token from the request.
          *
          * @throws \Tymon\JWTAuth\Exceptions\JWTException
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function parseToken()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->parseToken();
         }
         
@@ -19970,7 +19970,7 @@ namespace Tymon\JWTAuth\Facades {
          */ 
         public static function getPayload()
         {
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->getPayload();
         }
         
@@ -19983,7 +19983,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function payload()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->payload();
         }
         
@@ -19997,7 +19997,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function getClaim($claim)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->getClaim($claim);
         }
         
@@ -20011,7 +20011,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function makePayload($subject)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->makePayload($subject);
         }
         
@@ -20025,7 +20025,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function checkSubjectModel($model)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->checkSubjectModel($model);
         }
         
@@ -20033,26 +20033,26 @@ namespace Tymon\JWTAuth\Facades {
          * Set the token.
          *
          * @param \Tymon\JWTAuth\Token|string $token
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function setToken($token)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->setToken($token);
         }
         
         /**
          * Unset the current token.
          *
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function unsetToken()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->unsetToken();
         }
         
@@ -20060,13 +20060,13 @@ namespace Tymon\JWTAuth\Facades {
          * Set the request instance.
          *
          * @param \Illuminate\Http\Request $request
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function setRequest($request)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->setRequest($request);
         }
         
@@ -20074,13 +20074,13 @@ namespace Tymon\JWTAuth\Facades {
          * Set whether the subject should be "locked".
          *
          * @param bool $lock
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function lockSubject($lock)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->lockSubject($lock);
         }
         
@@ -20093,7 +20093,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function manager()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->manager();
         }
         
@@ -20106,7 +20106,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function parser()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->parser();
         }
         
@@ -20119,7 +20119,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function factory()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->factory();
         }
         
@@ -20132,7 +20132,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function blacklist()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->blacklist();
         }
         
@@ -20140,13 +20140,13 @@ namespace Tymon\JWTAuth\Facades {
          * Set the custom claims.
          *
          * @param array $customClaims
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function customClaims($customClaims)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->customClaims($customClaims);
         }
         
@@ -20154,13 +20154,13 @@ namespace Tymon\JWTAuth\Facades {
          * Alias to set the custom claims.
          *
          * @param array $customClaims
-         * @return \Vanguard\Services\Auth\Api\JWTAuth 
+         * @return \Dsone\Services\Auth\Api\JWTAuth
          * @static 
          */ 
         public static function claims($customClaims)
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->claims($customClaims);
         }
         
@@ -20173,7 +20173,7 @@ namespace Tymon\JWTAuth\Facades {
         public static function getCustomClaims()
         {
             //Method inherited from \Tymon\JWTAuth\JWT            
-                        /** @var \Vanguard\Services\Auth\Api\JWTAuth $instance */
+                        /** @var \Dsone\Services\Auth\Api\JWTAuth $instance */
                         return $instance->getCustomClaims();
         }
          
@@ -24844,7 +24844,7 @@ namespace  {
 
     class Setting extends \Akaunting\Setting\Facade {}
 
-    class Authy extends \Vanguard\Services\Auth\TwoFactor\Facade {}
+    class Authy extends \Dsone\Services\Auth\TwoFactor\Facade {}
 
     class JWTAuth extends \Tymon\JWTAuth\Facades\JWTAuth {}
 
