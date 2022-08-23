@@ -3,6 +3,8 @@
 namespace Dsone\Providers;
 
 use Carbon\Carbon;
+use Dsone\Repositories\Client\ClientRepository;
+use Dsone\Repositories\Client\EloquentClient;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Dsone\Repositories\Country\CountryRepository;
 use Dsone\Repositories\Country\EloquentCountry;
@@ -46,6 +48,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(PermissionRepository::class, EloquentPermission::class);
         $this->app->singleton(SessionRepository::class, DbSession::class);
         $this->app->singleton(CountryRepository::class, EloquentCountry::class);
+        $this->app->singleton(ClientRepository::class, EloquentClient::class);
 
         if ($this->app->environment('local')) {
             $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);

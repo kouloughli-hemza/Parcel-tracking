@@ -102,11 +102,6 @@ class InstallController extends Controller
             Artisan::call('key:generate', ['--force' => true]);
             Artisan::call('migrate', ['--force' => true]);
             Artisan::call('db:seed', ['--force' => true]);
-            Artisan::call('db:seed', [
-                '--force' => true,
-                '--quiet' => true,
-                '--class' => '\\Dsone\\Announcements\\Database\\Seeders\\AnnouncementsDatabaseSeeder'
-            ]);
 
             return redirect()->route('install.complete');
         } catch (\Exception $e) {

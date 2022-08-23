@@ -43,6 +43,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.3",
         "jenssegers/agent": "^2.5",
+        "kossa/algerian-cities": "^3.0",
         "lab404/laravel-impersonate": "^1.2",
         "laravel/framework": "^8.0",
         "laravel/sanctum": "^2.0",
@@ -51,8 +52,8 @@
         "laravelcollective/html": "^6.2",
         "proengsoft/laravel-jsvalidation": "^4.0.0",
         "spatie/laravel-query-builder": "^3.0",
-        "vanguardapp/announcements": "*",
         "vanguardapp/activity-log": "*",
+        "vanguardapp/announcements": "*",
         "vanguardapp/plugins": "^3.0.0",
         "webpatser/laravel-countries": "dev-master"
     },
