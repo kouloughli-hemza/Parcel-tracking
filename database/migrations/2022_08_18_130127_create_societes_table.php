@@ -15,6 +15,10 @@ class CreateSocietesTable extends Migration
     {
         Schema::create('societes', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->default('My own company');
+            $table->string('logo')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
             $table->timestamps();
         });
     }

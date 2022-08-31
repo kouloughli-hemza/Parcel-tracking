@@ -5,6 +5,12 @@ namespace Dsone\Providers;
 use Carbon\Carbon;
 use Dsone\Repositories\Client\ClientRepository;
 use Dsone\Repositories\Client\EloquentClient;
+use Dsone\Repositories\Coli\ColiRepository;
+use Dsone\Repositories\Coli\EloquentColi;
+use Dsone\Repositories\Expediteur\EloquentExpediteur;
+use Dsone\Repositories\Expediteur\ExpediteurRepository;
+use Dsone\Repositories\Facture\EloquentFacture;
+use Dsone\Repositories\Facture\FactureRepository;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Dsone\Repositories\Country\CountryRepository;
 use Dsone\Repositories\Country\EloquentCountry;
@@ -49,6 +55,9 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(SessionRepository::class, DbSession::class);
         $this->app->singleton(CountryRepository::class, EloquentCountry::class);
         $this->app->singleton(ClientRepository::class, EloquentClient::class);
+        $this->app->singleton(ColiRepository::class, EloquentColi::class);
+        $this->app->singleton(ExpediteurRepository::class, EloquentExpediteur::class);
+        $this->app->singleton(FactureRepository::class, EloquentFacture::class);
 
         if ($this->app->environment('local')) {
             $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);

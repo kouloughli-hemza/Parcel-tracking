@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExpediteursTable extends Migration
+class AddShippingCostToColisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateExpediteursTable extends Migration
      */
     public function up()
     {
-        Schema::create('expediteurs', function (Blueprint $table) {
-            $table->id();
-            $table->string('nom')->nullable();
-            $table->string('prenom')->nullable();
-            $table->string('phone');
-            $table->timestamps();
+        Schema::table('colis', function (Blueprint $table) {
+            $table->decimal('shipping_cost',20)->default(0);
         });
     }
 
@@ -29,6 +25,8 @@ class CreateExpediteursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('expediteurs');
+        Schema::table('colis', function (Blueprint $table) {
+            $table->dropColumn('shipping_cost');
+        });
     }
 }

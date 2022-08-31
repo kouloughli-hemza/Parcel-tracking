@@ -4,14 +4,14 @@ namespace Dsone\Support\Enum;
 
 class SendTypes
 {
-    const SIMPLE = 'Simple';
-    const RAPIDE = 'Rapide';
+    const DOMICILE = 'Domicile';
+    const STOP_DESK = 'Stop-Desk';
 
-    public static function lists()
+    public static function lists(): array
     {
         return [
-            self::SIMPLE => 'Simple',
-            self::RAPIDE => 'Rapide',
+            self::DOMICILE => 'Domicile',
+            self::STOP_DESK => 'Stop-Desk',
         ];
     }
 }

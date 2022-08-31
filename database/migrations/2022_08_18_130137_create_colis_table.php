@@ -16,9 +16,17 @@ class CreateColisTable extends Migration
     {
         Schema::create('colis', function (Blueprint $table) {
             $table->id();
+            $table->string('description_produit')->nullable();
+            $table->string('poids')->nullable();
+            $table->decimal('prix_unitaire',25,2)->default(0);
             $table->string('tracking_number');
-            $table->enum('type_envoi', SendTypes::lists())
-                ->default(SendTypes::SIMPLE);
+            $table->foreignId('client_id')->constrained()->onDelete('cascade');
+            $table->foreignId('facture_id')->constrained()->onDelete('cascade');
+            $table->foreignId('expediteur_id')->constrained()->onDelete('cascade');
+            $table->enum('shipping_type', SendTypes::lists())
+                ->default(SendTypes::DOMICILE);
+            $table->text('note')->nullable();
+
             $table->timestamps();
         });
     }

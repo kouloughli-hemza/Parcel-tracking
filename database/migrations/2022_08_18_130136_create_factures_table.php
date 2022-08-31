@@ -15,6 +15,12 @@ class CreateFacturesTable extends Migration
     {
         Schema::create('factures', function (Blueprint $table) {
             $table->id();
+            $table->string('reference');
+            $table->string('total_coli');
+            $table->decimal('total_ttc',25);
+            $table->decimal('sur_facture',25);
+            $table->decimal('net_amount',25);
+            $table->foreignId('expediteur_id')->constrained()->cascadeOnUpdate();
             $table->timestamps();
         });
     }

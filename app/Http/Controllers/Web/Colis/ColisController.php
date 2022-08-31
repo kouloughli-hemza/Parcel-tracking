@@ -1,0 +1,204 @@
+<?php
+
+namespace Dsone\Http\Controllers\Web\Colis;
+
+use Dsone\Http\Controllers\Controller;
+use Dsone\Http\Requests\Colis\CreateColisRequest;
+use Dsone\Repositories\Client\ClientRepository;
+use Dsone\Repositories\Coli\ColiRepository;
+use Dsone\Repositories\Expediteur\ExpediteurRepository;
+use Dsone\Repositories\Facture\FactureRepository;
+use Dsone\Support\Enum\SendTypes;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+class ColisController extends Controller
+{
+
+    /**
+     * @var ColiRepository
+     */
+    private $colis;
+
+    /**
+     * @var ClientRepository
+     */
+    private $clients;
+
+    /**
+     * @var ExpediteurRepository
+     */
+    private $expediteurs;
+
+    /**
+     * @var FactureRepository
+     */
+    private $factures;
+
+
+    /**
+     * Colis Controller constructor.
+     * @param ColiRepository $colis
+     * @param ClientRepository $clients
+     * @param ExpediteurRepository $expediteurs
+     * @param FactureRepository $factures
+     */
+    public function __construct(
+        ColiRepository $colis,
+        ClientRepository $clients,
+        ExpediteurRepository $expediteurs,
+        FactureRepository $factures
+    )
+    {
+        $this->colis = $colis;
+        $this->clients = $clients;
+        $this->expediteurs = $expediteurs;
+        $this->factures = $factures;
+    }
+
+
+    /**
+     * Display paginated list of all Parcels.
+     * @param Request $request
+     * @return Application|Factory|View
+     */
+    public function index(Request $request)
+    {
+        $parcels = $this->colis->paginate($perPage = 20, $request->search, $request->status);
+
+        return view('parcel.list', compact('parcels'));
+    }
+
+
+    /**
+     * Displays form for creating a new parcel.
+     * @return Application|Factory|View
+     */
+    public function create()
+    {
+        $statuses = SendTypes::lists();
+        return view('parcel.add',compact('statuses'));
+    }
+
+
+    /**
+     * @param CreateColisRequest $request
+     * @return RedirectResponse
+     * @throws \Throwable
+     */
+    public function store(CreateColisRequest $request)
+    {
+        $data = $request->all();
+        try {
+            $result = DB::transaction(function () use ($request,$data) {
+                $client = $this->createClient($request);
+                $sender = $this->createSender($request);
+                $facture = $this->createInvoice($request,$sender->id);
+                $data += [
+                    'client_id' => $client->id,
+                    'facture_id' => $facture->id,
+                    'expediteur_id' => $sender->id,
+                    'tracking_number' => $this->colis->generateTrackingNumber()
+                ];
+                $this->colis->create($data);
+            });
+
+            return redirect()->route('parcels.index')
+                ->withSuccess(__('Colis créée avec succès'));
+        }catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
+    }
+
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    private function createClient($request)
+    {
+        $clientData = [
+            'nom' => $request->nom,
+            'prenom' => $request->prenom,
+            'tel' => $request->tel,
+            'adresse' => $request->adresse,
+            'commune_id' => $request->commune_id,
+            'wilaya_id' => $request->wilaya_id,
+        ];
+        return $this->clients->create($clientData);
+    }
+
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    private function createSender($request)
+    {
+        $senderData = [
+            'nom' => $request->sender_nom,
+            'prenom' => $request->sender_prenom,
+            'phone' => $request->sender_tel,
+        ];
+        return $this->expediteurs->create($senderData);
+    }
+
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    private function createInvoice($request,$senderID)
+    {
+
+        $factureData = [
+            'reference' => $this->factures->createReference(),
+            'total_coli' => 1,
+            'total_ttc' => $this->calculateTotalTTC($request),
+            'sur_facture' => $this->calculateSurFacture($request),
+            'net_amount' => $this->calculateNetAmount($request),
+            'expediteur_id' => $senderID,
+        ];
+
+        return $this->factures->create($factureData);
+    }
+
+    /**
+     * @param $request
+     * @return int
+     */
+    private function calculateTotalTTC($request): int
+    {
+        if($request->has('prix_unitaire')){
+            return $request->prix_unitaire + $request->shipping_cost;
+        }
+        return $request->shipping_cost;
+    }
+
+
+    /**
+     * @param $request
+     * @return int
+     */
+    private function calculateSurFacture($request): int
+    {
+        if($request->has('sur_facture')){
+            return $request->sur_facture;
+        }
+        return 0;
+    }
+
+    /**
+     * @param $request
+     * @return int
+     */
+    private function calculateNetAmount($request): int
+    {
+        $sub = $this->calculateTotalTTC($request) + $this->calculateSurFacture($request);
+        return $sub - $request->shipping_cost;
+    }
+}

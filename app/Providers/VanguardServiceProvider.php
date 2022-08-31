@@ -2,6 +2,13 @@
 
 namespace Dsone\Providers;
 
+use Dsone\Support\Plugins\Clients;
+use Dsone\Support\Plugins\Colis;
+use Dsone\Support\Plugins\Dashboard\Dashboard;
+use Dsone\Support\Plugins\RolesAndPermissions;
+use Dsone\Support\Plugins\Settings;
+use Dsone\Support\Plugins\Users;
+use Vanguard\Announcements\Announcements;
 use Vanguard\Plugins\VanguardServiceProvider as BaseVanguardServiceProvider;
 use Dsone\Support\Plugins\Dashboard\Widgets\BannedUsers;
 use Dsone\Support\Plugins\Dashboard\Widgets\LatestRegistrations;
@@ -23,12 +30,14 @@ class VanguardServiceProvider extends BaseVanguardServiceProvider
     protected function plugins()
     {
         return [
-            \Dsone\Support\Plugins\Dashboard\Dashboard::class,
-            \Dsone\Support\Plugins\Users::class,
+            Dashboard::class,
+            Users::class,
+            Clients::class,
+            Colis::class,
             UserActivity::class,
-            \Dsone\Support\Plugins\RolesAndPermissions::class,
-            \Dsone\Support\Plugins\Settings::class,
-            \Vanguard\Announcements\Announcements::class,
+            RolesAndPermissions::class,
+            Settings::class,
+            Announcements::class,
         ];
     }
 

@@ -16,10 +16,11 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        $this->call(\Database\Seeders\CountriesSeeder::class);
-        $this->call(\Database\Seeders\RolesSeeder::class);
-        $this->call(\Database\Seeders\PermissionsSeeder::class);
-        $this->call(\Database\Seeders\UserSeeder::class);
+        $this->call(CountriesSeeder::class);
+        $this->call(RolesSeeder::class);
+        $this->call(PermissionsSeeder::class);
+        $this->call(UserSeeder::class);
+        $this->call(SocieteSeeder::class);
 
         Model::reguard();
     }

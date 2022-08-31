@@ -194,6 +194,13 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 
     Route::resource('clients', 'Clients\ClientsController')
         ->middleware('permission:users.manage');
+
+    /*
+     * Parcels Management
+     */
+    Route::resource('parcels', 'Colis\ColisController')
+        //->except('update')
+        ->middleware('permission:users.manage');
 });
 
 
