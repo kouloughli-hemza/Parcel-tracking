@@ -150,6 +150,47 @@ class EloquentFacture implements FactureRepository
     }
 
 
+
+
+    /**
+     * @inheritDoc
+     */
+    public function getShippingTotal($request)
+    {
+        return $request->shipping_cost;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function calculateTotalTTC($request)
+    {
+        if($request->has('prix_unitaire')) {
+            return $request->prix_unitaire + $this->getShippingTotal($request);
+        }
+        return $this->getShippingTotal($request);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function calculateSurFacture($request): int
+    {
+        if($request->has('sur_facture')){
+            return $request->sur_facture;
+        }
+        return 0;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function calculateNetAmount($request): int
+    {
+        return $this->calculateTotalTTC($request) + $this->calculateSurFacture($request);
+    }
+
+
     /**
      * @return mixed
      */

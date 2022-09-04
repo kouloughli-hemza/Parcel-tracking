@@ -93,6 +93,12 @@ interface ColiRepository
 
 
     /**
+     * @param $request
+     * @return mixed
+     */
+    public function createColisClient($request);
+
+    /**
      * @return mixed
      */
     public function getNextID();

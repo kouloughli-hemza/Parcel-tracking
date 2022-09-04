@@ -95,7 +95,7 @@ class ColisController extends Controller
         $data = $request->all();
         try {
             $result = DB::transaction(function () use ($request,$data) {
-                $client = $this->createClient($request);
+                $client = $this->colis->createColisClient($request);
                 $sender = $this->createSender($request);
                 $facture = $this->createInvoice($request,$sender->id);
                 $data += [
@@ -119,24 +119,6 @@ class ColisController extends Controller
      * @param $request
      * @return mixed
      */
-    private function createClient($request)
-    {
-        $clientData = [
-            'nom' => $request->nom,
-            'prenom' => $request->prenom,
-            'tel' => $request->tel,
-            'adresse' => $request->adresse,
-            'commune_id' => $request->commune_id,
-            'wilaya_id' => $request->wilaya_id,
-        ];
-        return $this->clients->create($clientData);
-    }
-
-
-    /**
-     * @param $request
-     * @return mixed
-     */
     private function createSender($request)
     {
         $senderData = [
@@ -150,6 +132,7 @@ class ColisController extends Controller
 
     /**
      * @param $request
+     * @param $senderID
      * @return mixed
      */
     private function createInvoice($request,$senderID)
@@ -158,47 +141,15 @@ class ColisController extends Controller
         $factureData = [
             'reference' => $this->factures->createReference(),
             'total_coli' => 1,
-            'total_ttc' => $this->calculateTotalTTC($request),
-            'sur_facture' => $this->calculateSurFacture($request),
-            'net_amount' => $this->calculateNetAmount($request),
+            'total_ttc' => $this->factures->calculateTotalTTC($request),
+            'sur_facture' => $this->factures->calculateSurFacture($request),
+            'net_amount' => $this->factures->calculateNetAmount($request),
+            'total_shipping' => $this->factures->getShippingTotal($request),
             'expediteur_id' => $senderID,
         ];
 
         return $this->factures->create($factureData);
     }
 
-    /**
-     * @param $request
-     * @return int
-     */
-    private function calculateTotalTTC($request): int
-    {
-        if($request->has('prix_unitaire')){
-            return $request->prix_unitaire + $request->shipping_cost;
-        }
-        return $request->shipping_cost;
-    }
 
-
-    /**
-     * @param $request
-     * @return int
-     */
-    private function calculateSurFacture($request): int
-    {
-        if($request->has('sur_facture')){
-            return $request->sur_facture;
-        }
-        return 0;
-    }
-
-    /**
-     * @param $request
-     * @return int
-     */
-    private function calculateNetAmount($request): int
-    {
-        $sub = $this->calculateTotalTTC($request) + $this->calculateSurFacture($request);
-        return $sub - $request->shipping_cost;
-    }
 }

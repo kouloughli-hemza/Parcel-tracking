@@ -201,6 +201,15 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::resource('parcels', 'Colis\ColisController')
         //->except('update')
         ->middleware('permission:users.manage');
+
+    /*
+    * Facture Management
+    */
+    Route::resource('factures', 'Factures\FacturesController')
+        ->middleware('permission:users.manage');
+
+    Route::get('factures/{facture}/append-parcel','Factures\FacturesController@appendParcelView')->name('factures.append');
+    Route::post('factures/{facture}/append-parcel','Factures\FacturesController@appendParcel')->name('factures.append-parcel');
 });
 
 

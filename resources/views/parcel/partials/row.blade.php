@@ -34,16 +34,5 @@
             <i class="fas fa-edit"></i>
         </a>
 
-        <a href="{{ route('parcels.destroy', $parcel) }}"
-           class="btn btn-icon"
-           title="@lang('Supprimer le coliss')"
-           data-toggle="tooltip"
-           data-placement="top"
-           data-method="DELETE"
-           data-confirm-title="@lang('Veuillez confirmer')"
-           data-confirm-text="@lang('Êtes-vous sûr de vouloir supprimer ce colis ??')"
-           data-confirm-delete="@lang('Oui, supprimez-le !')">
-            <i class="fas fa-trash"></i>
-        </a>
     </td>
 </tr>

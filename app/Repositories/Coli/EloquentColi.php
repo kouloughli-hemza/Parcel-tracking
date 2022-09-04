@@ -5,9 +5,27 @@ namespace Dsone\Repositories\Coli;
 use Dsone\Coli;
 use Carbon\Carbon;
 use Dsone\Http\Filters\ColiKeywordSearch;
+use Dsone\Repositories\Client\ClientRepository;
 
 class EloquentColi implements ColiRepository
 {
+
+    /**
+     * @var ClientRepository
+     */
+    private $clients;
+
+
+    /**
+     * EloquentColi constructor.
+     * @param ClientRepository $clients
+     */
+    public function __construct(ClientRepository $clients)
+    {
+
+        $this->clients = $clients;
+    }
+
 
     /**
      * {@inheritdoc}
@@ -153,6 +171,10 @@ class EloquentColi implements ColiRepository
     }
 
 
+
+
+
+
     /**
      * @return mixed
      */
@@ -167,5 +189,23 @@ class EloquentColi implements ColiRepository
         $code = 0;
         for($i = 0; $i < $limit; $i++) { $code .= mt_rand(0, 9); }
         return $code;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function createColisClient($request)
+    {
+
+        $clientData = [
+            'nom' => $request->nom,
+            'prenom' => $request->prenom,
+            'tel' => $request->tel,
+            'adresse' => $request->adresse,
+            'commune_id' => $request->commune_id,
+            'wilaya_id' => $request->wilaya_id,
+        ];
+        return $this->clients->create($clientData);
+
     }
 }

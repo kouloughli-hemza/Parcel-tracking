@@ -86,10 +86,39 @@ interface FactureRepository
     public function latest($count = 20);
 
 
+
     /**
      * @return mixed
      */
     public function createReference();
+
+
+
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function calculateTotalTTC($request);
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function calculateSurFacture($request);
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function calculateNetAmount($request);
+
+
+    /**
+     * @param $request
+     * @return mixed
+     */
+    public function getShippingTotal($request);
 
 
     /**

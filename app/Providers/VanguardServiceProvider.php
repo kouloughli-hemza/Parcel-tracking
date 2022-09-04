@@ -5,6 +5,7 @@ namespace Dsone\Providers;
 use Dsone\Support\Plugins\Clients;
 use Dsone\Support\Plugins\Colis;
 use Dsone\Support\Plugins\Dashboard\Dashboard;
+use Dsone\Support\Plugins\Factures;
 use Dsone\Support\Plugins\RolesAndPermissions;
 use Dsone\Support\Plugins\Settings;
 use Dsone\Support\Plugins\Users;
@@ -34,6 +35,7 @@ class VanguardServiceProvider extends BaseVanguardServiceProvider
             Users::class,
             Clients::class,
             Colis::class,
+            Factures::class,
             UserActivity::class,
             RolesAndPermissions::class,
             Settings::class,
