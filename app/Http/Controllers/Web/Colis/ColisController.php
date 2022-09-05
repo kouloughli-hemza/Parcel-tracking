@@ -2,6 +2,7 @@
 
 namespace Dsone\Http\Controllers\Web\Colis;
 
+use Dsone\Coli;
 use Dsone\Http\Controllers\Controller;
 use Dsone\Http\Requests\Colis\CreateColisRequest;
 use Dsone\Repositories\Client\ClientRepository;
@@ -149,6 +150,14 @@ class ColisController extends Controller
         ];
 
         return $this->factures->create($factureData);
+    }
+
+    /**
+     * @param Coli $coli
+     */
+    public function generatePDF(Coli $coli)
+    {
+        return view('exports.colis');
     }
 
 

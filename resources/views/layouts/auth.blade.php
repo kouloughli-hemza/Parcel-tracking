@@ -13,6 +13,8 @@
 
     @yield('header-scripts')
 
+    @yield('styles')
+
     @hook('auth:styles')
 </head>
 <body class="auth">

@@ -199,8 +199,8 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
      * Parcels Management
      */
     Route::resource('parcels', 'Colis\ColisController')
-        //->except('update')
         ->middleware('permission:users.manage');
+    Route::get('parcels/{coli}/pdf','Colis\ColisController@generatePDF')->name('parcels.pdf');
 
     /*
     * Facture Management
@@ -210,6 +210,8 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
 
     Route::get('factures/{facture}/append-parcel','Factures\FacturesController@appendParcelView')->name('factures.append');
     Route::post('factures/{facture}/append-parcel','Factures\FacturesController@appendParcel')->name('factures.append-parcel');
+    Route::get('factures/{facture}/pdf','Factures\FacturesController@generatePDF')->name('factures.pdf');
+
 });
 
 

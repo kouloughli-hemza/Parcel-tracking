@@ -1,0 +1,104 @@
+.text-right {
+    text-align: right;
+}
+.container{
+    padding: 0px;
+    height: 165px;
+    position: relative;
+    background-color: #0b85d0;
+    margin-bottom: 5px
+}
+
+h4 {
+    margin: 0;
+    padding: 8px;
+    background-color: #aaa;
+}
+h5 {
+    margin: 0;
+    padding: 8px;
+    background-color: #aaa;
+}
+.date {
+    position: absolute;
+    top: 4px;
+    left: 65px;
+    font-size: 14px;
+    color: rgba(0,0,102,1);
+}
+.ticket{
+    width: 100%;
+    height: 136px;
+    background: #e0e0e0;
+}
+.airline{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0,0,102,1);
+}
+.itinerary {
+    position: absolute;
+    top: 40px;
+    left: 35px;
+}
+
+
+.time {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+}
+
+.airport_departure{
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+}
+
+.airport_arrival{
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+}
+
+.sub-content{
+    background:#aaa;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+}
+.flight{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+}
+.equipment{
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+}
+.hold_baggage{
+    position: absolute;
+    top: 10px;
+    left: 160px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+}
+.hand_baggage{
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+}

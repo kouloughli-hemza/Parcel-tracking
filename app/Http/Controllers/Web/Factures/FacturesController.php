@@ -2,6 +2,7 @@
 
 namespace Dsone\Http\Controllers\Web\Factures;
 
+use Barryvdh\DomPDF\Facade\Pdf;
 use Dsone\Facture;
 use Dsone\Http\Controllers\Controller;
 use Dsone\Http\Requests\Colis\CreateColisRequest;
@@ -12,6 +13,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 
 class FacturesController extends Controller
@@ -123,5 +125,16 @@ class FacturesController extends Controller
         }
 
 
+    }
+
+    /**
+     * Generate PDF file for facture
+     * @param Facture $facture
+     * @return Response
+     */
+    public function generatePDF(Facture $facture): Response
+    {
+        $pdf = Pdf::loadView('exports.facture', ['facture' => $facture]);
+        return $pdf->stream('facture.pdf');
     }
 }
