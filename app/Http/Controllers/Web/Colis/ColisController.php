@@ -2,6 +2,7 @@
 
 namespace Dsone\Http\Controllers\Web\Colis;
 
+use Barryvdh\DomPDF\Facade\Pdf;
 use Dsone\Coli;
 use Dsone\Http\Controllers\Controller;
 use Dsone\Http\Requests\Colis\CreateColisRequest;
@@ -15,7 +16,11 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Milon\Barcode\DNS1D;
+use Milon\Barcode\DNS2D;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class ColisController extends Controller
 {
@@ -154,10 +159,14 @@ class ColisController extends Controller
 
     /**
      * @param Coli $coli
+     * @param DNS1D $dns1d
+     * @param DNS2D $dns2d
+     * @return Response
      */
-    public function generatePDF(Coli $coli)
+    public function generatePDF(Coli $coli,DNS1D $dns1d, DNS2D $dns2d): Response
     {
-        return view('exports.colis');
+        $pdf = Pdf::loadView('exports.colis', ['coli' => $coli,'dns1d' => $dns1d,'dns2d' => $dns2d]);
+        return $pdf->stream('colis.pdf');
     }
 
 

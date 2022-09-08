@@ -196,6 +196,8 @@ return [
         Webpatser\Countries\CountriesServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
+        Milon\Barcode\BarcodeServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -267,6 +269,8 @@ return [
         'Setting' => Akaunting\Setting\Facade::class,
         'Authy' => Dsone\Services\Auth\TwoFactor\Facade::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
+        'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
+        'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
 
     ],
 

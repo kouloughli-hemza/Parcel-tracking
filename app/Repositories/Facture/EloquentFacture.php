@@ -146,7 +146,7 @@ class EloquentFacture implements FactureRepository
      */
     public function createReference()
     {
-        return str_pad($this->getNextID(),10,STR_PAD_RIGHT);
+        return str_pad($this->getNextID(),10,0,STR_PAD_LEFT);
     }
 
 
