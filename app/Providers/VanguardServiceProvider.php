@@ -5,6 +5,10 @@ namespace Dsone\Providers;
 use Dsone\Support\Plugins\Clients;
 use Dsone\Support\Plugins\Colis;
 use Dsone\Support\Plugins\Dashboard\Dashboard;
+use Dsone\Support\Plugins\Dashboard\Widgets\FacturesHistory;
+use Dsone\Support\Plugins\Dashboard\Widgets\LatestParcels;
+use Dsone\Support\Plugins\Dashboard\Widgets\TotalFactures;
+use Dsone\Support\Plugins\Dashboard\Widgets\TotalParcels;
 use Dsone\Support\Plugins\Factures;
 use Dsone\Support\Plugins\RolesAndPermissions;
 use Dsone\Support\Plugins\Settings;
@@ -28,7 +32,7 @@ class VanguardServiceProvider extends BaseVanguardServiceProvider
      *
      * @return array
      */
-    protected function plugins()
+    protected function plugins(): array
     {
         return [
             Dashboard::class,
@@ -48,15 +52,19 @@ class VanguardServiceProvider extends BaseVanguardServiceProvider
      *
      * @return array
      */
-    protected function widgets()
+    protected function widgets(): array
     {
         return [
+            TotalParcels::class,
+            TotalFactures::class,
             UserActions::class,
             TotalUsers::class,
             NewUsers::class,
-            BannedUsers::class,
-            UnconfirmedUsers::class,
+            //BannedUsers::class,
+            //UnconfirmedUsers::class,
+            FacturesHistory::class,
             RegistrationHistory::class,
+            LatestParcels::class,
             LatestRegistrations::class,
             ActivityWidget::class
         ];

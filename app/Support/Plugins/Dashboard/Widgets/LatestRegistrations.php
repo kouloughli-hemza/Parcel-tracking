@@ -10,7 +10,7 @@ class LatestRegistrations extends Widget
     /**
      * {@inheritdoc}
      */
-    public $width = '4';
+    public $width = '6';
 
     /**
      * {@inheritdoc}

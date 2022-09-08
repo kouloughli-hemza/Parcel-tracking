@@ -3,10 +3,11 @@
 namespace Dsone\Support\Plugins\Dashboard\Widgets;
 
 use Carbon\Carbon;
+use Dsone\Repositories\Facture\FactureRepository;
 use Vanguard\Plugins\Widget;
 use Dsone\Repositories\User\UserRepository;
 
-class RegistrationHistory extends Widget
+class FacturesHistory extends Widget
 {
     /**
      * {@inheritdoc}
@@ -21,20 +22,20 @@ class RegistrationHistory extends Widget
     /**
      * @var UserRepository
      */
-    private $users;
+    private $factures;
 
     /**
      * @var array Count of new users per month.
      */
-    protected $usersPerMonth;
+    protected $facturesPerMonth;
 
     /**
      * RegistrationHistory constructor.
-     * @param UserRepository $users
+     * @param FactureRepository $factures
      */
-    public function __construct(UserRepository $users)
+    public function __construct(FactureRepository $factures)
     {
-        $this->users = $users;
+        $this->factures = $factures;
     }
 
     /**
@@ -42,8 +43,8 @@ class RegistrationHistory extends Widget
      */
     public function render()
     {
-        return view('plugins.dashboard.widgets.registration-history', [
-            'usersPerMonth' => $this->getUsersPerMonth()
+        return view('plugins.dashboard.widgets.factures-history', [
+            'facturesPerMonth' => $this->getFacturesPerMonth()
         ]);
     }
 
@@ -52,18 +53,18 @@ class RegistrationHistory extends Widget
      */
     public function scripts()
     {
-        return view('plugins.dashboard.widgets.registration-history-scripts', [
-            'usersPerMonth' => $this->getUsersPerMonth()
+        return view('plugins.dashboard.widgets.factures-history-scripts', [
+            'facturesPerMonth' => $this->getFacturesPerMonth()
         ]);
     }
 
-    private function getUsersPerMonth()
+    private function getFacturesPerMonth(): array
     {
-        if ($this->usersPerMonth) {
-            return $this->usersPerMonth;
+        if ($this->facturesPerMonth) {
+            return $this->facturesPerMonth;
         }
 
-        return $this->usersPerMonth = $this->users->countOfNewUsersPerMonth(
+        return $this->facturesPerMonth = $this->factures->countOfNewFacturesPerMonth(
             Carbon::now()->subYear()->startOfMonth(),
             Carbon::now()->endOfMonth()
         );
