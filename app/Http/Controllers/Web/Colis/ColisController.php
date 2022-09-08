@@ -20,7 +20,6 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Milon\Barcode\DNS1D;
 use Milon\Barcode\DNS2D;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class ColisController extends Controller
 {
