@@ -37,9 +37,9 @@ class VanguardServiceProvider extends BaseVanguardServiceProvider
             Colis::class,
             Factures::class,
             UserActivity::class,
-            RolesAndPermissions::class,
+            //RolesAndPermissions::class,
             Settings::class,
-            Announcements::class,
+            //Announcements::class,
         ];
     }
 

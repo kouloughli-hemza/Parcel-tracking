@@ -33,8 +33,8 @@ class Settings extends Plugin
             ->permissions(['settings.general', 'settings.auth', 'settings.notifications'])
             ->addChildren([
                 $general,
-                $authAndRegistration,
-                $notifications,
+                //$authAndRegistration,
+                //$notifications,
             ]);
     }
 }

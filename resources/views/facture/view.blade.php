@@ -14,9 +14,23 @@
 
 @section('content')
 
+<div class="mb-4">
 
+    <div class="col-md-12 mb-4">
+        <a href="{{ route('factures.pdf', $facture) }}" target="__blank"
+           class="btn btn-primary btn-rounded float-right">
+            <i class="fas fa-download mr-2"></i>
+            @lang('Télécharger PDF')
+        </a>
+    </div>
+</div>
+<div class="clearfix mb-4"></div>
+<hr />
 <div class="row g-5">
             <div class="col-md-12 col-lg-12 order-md-last">
+
+
+
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
                     <span class="text-primary">Détails de la facture</span>
                     <span class="badge bg-primary rounded-pill text-white">{{$facture->colis->count() . ' Colis'}}</span>
@@ -63,6 +77,7 @@
                 </ul>
             </div>
     </div>
+
 
 
 <div class="card">
